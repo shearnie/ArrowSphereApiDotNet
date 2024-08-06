@@ -17,15 +17,17 @@ builder.Services.AddArrow(apiKey);
 
 ```
 
+\
+
 To call, inject the ArrowClient and then get the respective client for the feature such as Parters, Customers, Subscriptions, Catalogs.
 With that client instance call the method.
 
 ```
 // inject ArrowClient
-private ArrowClient _client;
+private ArrowClient _arrowClient;
 
 // get client object for calling API methods
-var client = _client.GetPartnersClient();
+var client = _arrowClient.GetPartnersClient();
 
 var rs = await client.WhoAmI();
 
