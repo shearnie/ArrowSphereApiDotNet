@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ArrowSphereApiDotNet.Models.Customers
 {
-    public record Detail(
+    public record CustomerDetail(
         bool Migration,
         string DomainName,
         string OracleOnlineKey,

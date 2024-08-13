@@ -1,5 +1,4 @@
 using ArrowSphereApiDotNet;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace ArrowSphereApiDotNetTests
@@ -11,18 +10,8 @@ namespace ArrowSphereApiDotNetTests
 		
 		[SetUp]
 		public async Task SetUp()
-		{
-			var services = new ServiceCollection();
-
-            var config = new ConfigurationBuilder()
-                    .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
-                    .Build();
-            services.AddSingleton<IConfiguration>(config);
-
-            _services = services
-                .AddArrow(config.GetValue<string>("Arrow:ApiKey"))
-                .BuildServiceProvider();
-
+        {
+            _services = Helpers.SetUpServiceProvider();
             _client = _services.GetService<ArrowClient>();
         }
 

@@ -1,16 +1,18 @@
 using ArrowSphereApiDotNet;
+using ArrowSphereApiDotNet.Models.Catalog;
 using Microsoft.Extensions.DependencyInjection;
+using System;
 
 namespace ArrowSphereApiDotNetTests
 {
-	public class TestPartners
+	public class TestCatalogs
     {
 		private ServiceProvider _services;
 		private ArrowClient _client;
 		
 		[SetUp]
 		public async Task SetUp()
-        {
+		{
             _services = Helpers.SetUpServiceProvider();
             _client = _services.GetService<ArrowClient>();
         }
@@ -22,15 +24,13 @@ namespace ArrowSphereApiDotNetTests
 		}
 
         [Test]
-		public async Task WhoAmI()
+		public async Task Find()
         {
-			var client = _client.GetPartnersClient();
+			var client = _client.GetCatalogClient();
 
-			var rs = await client.WhoAmI();
+			var rs = await client.Search(new CatalogSearchRequest());
 
-            Assert.That(rs.Status, Is.EqualTo(200));
-            Assert.That(string.IsNullOrEmpty(rs.Data.CompanyName), Is.False);
-            Assert.That(string.IsNullOrEmpty(rs.Data.User.Login), Is.False);
+			Assert.That(rs.Products.Any(), Is.True);
         }
     }
 }

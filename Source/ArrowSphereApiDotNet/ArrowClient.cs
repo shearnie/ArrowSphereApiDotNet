@@ -28,8 +28,13 @@ namespace ArrowSphereApiDotNet
             return new Customers(this);
         }
 
+		public Catalog GetCatalogClient()
+		{
+			return new Catalog(this);
+		}
 
-        private HttpClient GetHttpClient()
+
+		private HttpClient GetHttpClient()
         {
             if (string.IsNullOrEmpty(_config.ApiKey))
             {
@@ -112,11 +117,11 @@ namespace ArrowSphereApiDotNet
             return await HandleResponseMessage<T>(get);
         }
 
-        public async Task<T?> PostAsync<T>(string methodPath, string jsonRequestContent)
+        public async Task<T> PostAsync<T>(string methodPath, string? jsonRequestContent)
         {
             var post = await GetHttpClient().PostAsync(
                 _config.ApiBasePath + methodPath,
-                new StringContent(jsonRequestContent, Encoding.UTF8, "application/json"));
+                new StringContent(jsonRequestContent ?? string.Empty, Encoding.UTF8, "application/json"));
 
             return await HandleResponseMessage<T>(post);
         }

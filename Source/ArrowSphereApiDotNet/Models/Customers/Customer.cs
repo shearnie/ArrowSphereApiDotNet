@@ -36,7 +36,7 @@ namespace ArrowSphereApiDotNet.Models.Customers
         Contact Contact,
         OrganizationUnit OrganizationUnit,
         string Reseller,
-        Detail Details,
+        CustomerDetail Details,
         ExtraInformation ExtraInformation,
         DateTime CreatedAt,
         DateTime? DeletedAt,
