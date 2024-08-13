@@ -10,7 +10,6 @@ namespace ArrowSphereApiDotNet.Models.Catalog
 		string Id,
 		string MarketPlace,
 		string Sku,
-		string Reference,
 		string Name,
 		string Type,
 		string Vendor,

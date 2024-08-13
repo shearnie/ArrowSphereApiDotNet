@@ -3,9 +3,9 @@ using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net.Http.Json;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 
 namespace ArrowSphereApiDotNet
 {
@@ -18,9 +18,17 @@ namespace ArrowSphereApiDotNet
             _client = arrowClient;
         }
 
-        public async Task<CatalogSearchResponse> Search(CatalogSearchRequest request)
+        public async Task<CatalogSearchResponse> Search(CatalogSearchRequest request, int? page = null, int? perPage = null, string? searchBefore = null, string? searchAfter = null)
         {
-            return await _client.PostAsync<CatalogSearchResponse>("catalog/find", JsonConvert.SerializeObject(request));
+            var parameters = HttpUtility.ParseQueryString(string.Empty);
+            if (page != null) parameters["page"] = page.ToString();
+			if (perPage != null) parameters["per_page"] = perPage.ToString();
+			if (searchBefore != null) parameters["search_before"] = searchBefore;
+			if (searchAfter != null) parameters["search_after"] = searchAfter;
+
+			var query = "catalog/find" + (parameters.Count > 0 ? $"?{parameters.ToString()}" : "");
+
+			return await _client.PostAsync<CatalogSearchResponse>(query, JsonConvert.SerializeObject(request));
         }
     }
 }
