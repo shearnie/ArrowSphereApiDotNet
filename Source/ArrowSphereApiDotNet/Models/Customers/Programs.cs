@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace ArrowSphereApiDotNet.Models.Customers
 {
-    public class ExtraInformation
+    public class Programs
     {
-        public Programs Programs { get; set; } = new();
     }
 }

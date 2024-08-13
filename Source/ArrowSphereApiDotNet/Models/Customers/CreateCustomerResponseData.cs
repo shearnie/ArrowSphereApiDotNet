@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace ArrowSphereApiDotNet.Models.Customers
 {
-    public class ExtraInformation
+	public record CreateCustomerResponseData(
+        string Reference)
     {
-        public Programs Programs { get; set; } = new();
     }
 }

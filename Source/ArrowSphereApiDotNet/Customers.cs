@@ -1,4 +1,5 @@
 ﻿using ArrowSphereApiDotNet.Models.Customers;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,6 +26,11 @@ namespace ArrowSphereApiDotNet
         public async Task<CustomerDetails> CustomerDetails(string customerReference)
         {
             return await _client.GetAsync<CustomerDetails>($"customers/{customerReference}");
+        }
+
+        public async Task<CreateCustomerResponse> CreateCustomer(CreateCustomerRequest request)
+        {
+            return await _client.PostAsync<CreateCustomerResponse>("customers", JsonConvert.SerializeObject(request));
         }
     }
 }

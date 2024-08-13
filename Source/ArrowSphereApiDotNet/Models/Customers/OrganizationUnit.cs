@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ArrowSphereApiDotNet.Models.Customers
 {
-    public record OrganizationUnit(
-        string OrganizationUnitRef,
-        string Name)
+    public class OrganizationUnit
     {
+        public string OrganizationUnitRef { get; set; } = string.Empty;
+        public string Name { get; set; } = string.Empty;
     }
 }

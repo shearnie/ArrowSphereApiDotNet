@@ -1,4 +1,5 @@
 using ArrowSphereApiDotNet;
+using ArrowSphereApiDotNet.Models.Customers;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace ArrowSphereApiDotNetTests
@@ -47,6 +48,37 @@ namespace ArrowSphereApiDotNetTests
             Assert.That(rs.Status, Is.EqualTo(200));
             Assert.That(rs.Data.Customers.First().Reference, Is.EqualTo(reference));
             Assert.That(rs.Data.Customers.First().CompanyName, Is.EqualTo(name));
+        }
+
+        [Ignore("Do this manually.")]
+        [Test]
+        public async Task CreateCustomer()
+        {
+            var client = _client.GetCustomersClient();
+
+            var create = await client.CreateCustomer(new CreateCustomerRequest()
+            {
+                CompanyName = "Test",
+                AddressLine1 = "Anne Street",
+                Zip = "4000",
+                City = "Brisbane",
+                CountryCode = "AU",
+                ReceptionPhone = "+61 123456",
+                Contact = new Contact()
+                {
+                    FirstName = "J",
+                    LastName = "Doe",
+                    Email = "test@email.com",
+                    Phone = "+61 1234567",
+                    Type = "Primary",
+                },
+            });
+            Assert.That(create.Status, Is.EqualTo(200));
+
+            var rs = await client.CustomerDetails(create.Data.Reference);
+
+            Assert.That(rs.Status, Is.EqualTo(200));
+            Assert.That(rs.Data.Customers.First().Reference, Is.EqualTo(create.Data.Reference));
         }
     }
 }
