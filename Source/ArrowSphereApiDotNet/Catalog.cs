@@ -19,8 +19,14 @@ namespace ArrowSphereApiDotNet
         }
 
         public async Task<CatalogSearchResponse> Search(CatalogSearchRequest request, int? page = null, int? perPage = null, string? searchBefore = null, string? searchAfter = null)
-        {
-            var parameters = HttpUtility.ParseQueryString(string.Empty);
+		{
+			if (page.HasValue)
+			{
+				searchBefore = null;
+				searchAfter = null;
+			}
+
+			var parameters = HttpUtility.ParseQueryString(string.Empty);
             if (page != null) parameters["page"] = page.ToString();
 			if (perPage != null) parameters["per_page"] = perPage.ToString();
 			if (searchBefore != null) parameters["search_before"] = searchBefore;

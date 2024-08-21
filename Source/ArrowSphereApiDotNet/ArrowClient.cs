@@ -99,9 +99,9 @@ namespace ArrowSphereApiDotNet
             {
                 var rs = await response.Content.ReadFromJsonAsync<ArrowError>();
                 if (rs == null || rs.Status == 0)
-                {
-                    throw new ApplicationException("Unhandled Error.");
-                }
+				{
+					throw new ApplicationException($"Unhandled Error, code: {response.StatusCode}.");
+				}
                 throw new ArrowException()
                 {
                     ArrowError = rs
