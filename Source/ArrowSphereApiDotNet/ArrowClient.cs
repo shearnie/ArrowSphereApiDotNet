@@ -33,6 +33,11 @@ namespace ArrowSphereApiDotNet
 			return new Catalog(this);
 		}
 
+		public Subscriptions GetSubscriptionsClient()
+		{
+			return new Subscriptions(this);
+		}
+
 
 		private HttpClient GetHttpClient()
         {
