@@ -9,6 +9,6 @@ namespace ArrowSphereApiDotNet.Models
     public class ArrowException : Exception
     {
         public ArrowError ArrowError { get; set; } = new ArrowError(0, string.Empty, string.Empty, string.Empty);
-		public override string Message => ArrowError.Error;
-	}
+        public override string Message => ArrowError.Error;
+    }
 }

@@ -32,5 +32,10 @@ namespace ArrowSphereApiDotNet
         {
             return await _client.PostAsync<CreateCustomerResponse>("customers", JsonConvert.SerializeObject(request));
         }
+
+        public async Task<UpdateCustomerResponse> UpdateCustomer(UpdateCustomerRequest request)
+        {
+            return await _client.PatchAsync<UpdateCustomerResponse>($"customers/{request.Reference}", JsonConvert.SerializeObject(request));
+        }
     }
 }

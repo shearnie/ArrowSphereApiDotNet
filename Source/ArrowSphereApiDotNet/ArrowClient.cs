@@ -130,5 +130,14 @@ namespace ArrowSphereApiDotNet
 
             return await HandleResponseMessage<T>(post);
         }
+
+        public async Task<T> PatchAsync<T>(string methodPath, string? jsonRequestContent)
+        {
+            var post = await GetHttpClient().PatchAsync(
+                _config.ApiBasePath + methodPath,
+                new StringContent(jsonRequestContent ?? string.Empty, Encoding.UTF8, "application/json"));
+
+            return await HandleResponseMessage<T>(post);
+        }
     }
 }

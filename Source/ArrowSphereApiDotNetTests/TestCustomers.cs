@@ -80,5 +80,38 @@ namespace ArrowSphereApiDotNetTests
             Assert.That(rs.Status, Is.EqualTo(200));
             Assert.That(rs.Data.Customers.First().Reference, Is.EqualTo(create.Data.Reference));
         }
+
+        [Ignore("Do this manually.")]
+        [Test]
+        public async Task UpdateCustomer()
+        {
+            var client = _client.GetCustomersClient();
+
+            var update = await client.UpdateCustomer(new UpdateCustomerRequest()
+            {
+                CompanyName = "Test Changed",
+                AddressLine1 = "Anne Street",
+                Zip = "4000",
+                City = "Brisbane",
+                CountryCode = "AU",
+                ReceptionPhone = "+61 123456",
+                Contact = new Contact()
+                {
+                    FirstName = "Jon",
+                    LastName = "Doe",
+                    Email = "test@email.com",
+                    Phone = "+61 1234567",
+                    Type = "Primary",
+                },
+            });
+            Assert.That(update.Status, Is.EqualTo(200));
+
+            var rs = await client.CustomerDetails(update.Data.Customers.First().Reference);
+
+            Assert.That(rs.Status, Is.EqualTo(200));
+            Assert.That(rs.Data.Customers.First().Reference, Is.EqualTo(update.Data.Customers.First().Reference));
+            Assert.That(rs.Data.Customers.First().CompanyName, Is.EqualTo("Test Changed"));
+            Assert.That(rs.Data.Customers.First().Contact.FirstName, Is.EqualTo("Jon"));
+        }
     }
 }
