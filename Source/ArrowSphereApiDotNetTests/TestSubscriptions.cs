@@ -1,4 +1,5 @@
 ﻿using ArrowSphereApiDotNet;
+using ArrowSphereApiDotNet.Models.Subscriptions;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -46,7 +47,26 @@ namespace ArrowSphereApiDotNetTests
 			var rs = await client.GetSubscription(list.Data.First().Reference);
 
 			Assert.That(rs.Status, Is.EqualTo(200));
-			Assert.That(string.IsNullOrEmpty(rs.Data.Name), Is.False);
-		}
-	}
+            Assert.That(rs.Data.Reference, Is.EqualTo(list.Data.First().Reference));
+            Assert.That(string.IsNullOrEmpty(rs.Data.Name), Is.False);
+        }
+
+        [Ignore("Do this manually.")]
+        [Test]
+        public async Task CreateSubscription()
+        {
+            var client = _client.GetSubscriptionsClient();
+
+            var create = await client.CreateSubscription(new CreateSubscriptionRequest()
+            {
+                Sku = "CFQ7TTC0JXCZ:0004",
+            });
+            Assert.That(create.Status, Is.EqualTo(200));
+
+            var rs = await client.GetSubscription(create.Data.Reference);
+
+            Assert.That(rs.Status, Is.EqualTo(200));
+            Assert.That(rs.Data.Reference, Is.EqualTo(create.Data.Reference));
+        }
+    }
 }

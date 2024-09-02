@@ -1,4 +1,5 @@
 ﻿using ArrowSphereApiDotNet.Models.Subscriptions;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,5 +26,10 @@ namespace ArrowSphereApiDotNet
 		{
 			return await _client.GetAsync<GetSubscription>($"subscriptions/{reference}");
 		}
-	}
+
+		public async Task<CreateSubscriptionResponse> CreateSubscription(CreateSubscriptionRequest request)
+        {
+            return await _client.PostAsync<CreateSubscriptionResponse>("subscriptions", JsonConvert.SerializeObject(request));
+        }
+    }
 }
