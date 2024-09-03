@@ -36,10 +36,15 @@ namespace ArrowSphereApiDotNet
 		public Subscriptions GetSubscriptionsClient()
 		{
 			return new Subscriptions(this);
-		}
+        }
+
+        public Orders GetOrdersClient()
+        {
+            return new Orders(this);
+        }
 
 
-		private HttpClient GetHttpClient()
+        private HttpClient GetHttpClient()
         {
             if (string.IsNullOrEmpty(_config.ApiKey))
             {
