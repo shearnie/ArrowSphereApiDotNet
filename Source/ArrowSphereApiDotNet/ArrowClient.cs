@@ -43,6 +43,11 @@ namespace ArrowSphereApiDotNet
             return new Orders(this);
         }
 
+        public Billing GetBillingClient()
+        {
+            return new Billing(this);
+        }
+
 
         private HttpClient GetHttpClient()
         {

@@ -24,7 +24,7 @@ namespace ArrowSphereApiDotNet
 
         public async Task<CreateOrderResponse> CreateOrder(CreateOrderRequest request)
         {
-            return await _client.PostAsync<CreateOrderResponse>("orders", JsonConvert.SerializeObject(request));
+            return await _client.PostAsync<CreateOrderResponse>("orders", JsonHelper.Serialize(request));
         }
     }
 }
