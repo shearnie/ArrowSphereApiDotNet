@@ -29,7 +29,7 @@ namespace ArrowSphereApiDotNet
 
 		public async Task<CreateSubscriptionResponse> CreateSubscription(CreateSubscriptionRequest request)
         {
-            return await _client.PostAsync<CreateSubscriptionResponse>("subscriptions", JsonHelper.Serialize(request));
+            return await _client.PostAsync<CreateSubscriptionResponse>("subscriptions", JsonHelper.SerializeLowerCamel(request));
         }
     }
 }

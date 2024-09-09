@@ -9,7 +9,7 @@ namespace ArrowSphereApiDotNet
 {
     public static class JsonHelper
     {
-        public static string Serialize(object? value)
+        public static string SerializeLowerCamel(object? value)
         {
             return JsonConvert.SerializeObject(
                 value,

@@ -19,7 +19,7 @@ namespace ArrowSphereApiDotNet
 
         public async Task<GetBillingReportResponse> GetReport(GetBillingReportRequest request)
         {
-            return await _client.PostAsync<GetBillingReportResponse>("billing/erp/exports/sync", JsonHelper.Serialize(request));
+            return await _client.PostAsync<GetBillingReportResponse>("billing/erp/exports/sync", JsonHelper.SerializeLowerCamel(request));
         }
     }
 }
