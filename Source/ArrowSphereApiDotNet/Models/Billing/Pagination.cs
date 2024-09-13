@@ -9,8 +9,8 @@ namespace ArrowSphereApiDotNet.Models.Billing
     public record Pagination(
         int PerPage,
         int CurrentPage,
-		int Total,
-		int TotalPages)
+        int Total,
+        int TotalPages)
     {
     }
 }
