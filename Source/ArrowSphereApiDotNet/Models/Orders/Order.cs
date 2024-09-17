@@ -7,18 +7,19 @@ using System.Threading.Tasks;
 namespace ArrowSphereApiDotNet.Models.Orders
 {
     public record Order(
+        string Order_Reference,
         string Reference,
         string Status,
-        DateTime DateStatus,
-        DateTime DateCreation,
-        string Order_Reference,
-        string CreatedBy,
-        string CreatedByImpersonator,
-        decimal CommitmentAmountTotal,
+        string DateStatus,
+        string DateCreation,
+        string PoNumber,
         Partner Partner,
         Customer Customer,
-        string PoNumber,
-        IEnumerable<Product> Products)
+        IEnumerable<Product> Products,
+        ExtraInformation ExtraInformation,
+        string CreatedBy,
+        string CreatedByImpersonator,
+        decimal CommitmentAmountTotal)
     {
     }
 }

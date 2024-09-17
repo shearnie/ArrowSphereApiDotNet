@@ -10,21 +10,20 @@ namespace ArrowSphereApiDotNet.Models.Orders
         string Sku,
         string Name,
         string Classification,
-        string VendorName,
-        string ProgramName,
         Program Program,
         Identifier Identifiers,
         int Quantity,
         string Status,
-        DateTime DateStatus,
-        string DetailedStatus,
+        string DateStatus,
         bool IsAddon,
         bool IsTrial,
         IEnumerable<string> ArrowSubCategories,
+        string DetailedStatus,
         Price Prices,
         Subscription Subscription,
         License License,
-        ExtraInformation ExtraInformation)
+        string VendorName,
+        string ProgramName)
     {
     }
 }

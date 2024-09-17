@@ -12,8 +12,8 @@ namespace ArrowSphereApiDotNet.Models.Orders
         string Currency,
         string Periodicity,
         string Term,
-        string PeriodicityCode,
-        string TermCode)
+        int PeriodicityCode,
+        int TermCode)
     {
     }
 }

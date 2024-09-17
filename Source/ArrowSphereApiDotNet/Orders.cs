@@ -17,6 +17,11 @@ namespace ArrowSphereApiDotNet
 			_client = arrowClient;
 		}
 
+        public async Task<ListOrders> ListOrders()
+        {
+            return await _client.GetAsync<ListOrders>($"orders");
+        }
+
         public async Task<OrderDetails> OrderDetails(string orderReference)
         {
             return await _client.GetAsync<OrderDetails>($"orders/{orderReference}");

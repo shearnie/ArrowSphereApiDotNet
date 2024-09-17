@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace ArrowSphereApiDotNet.Models.Orders
 {
-    public record ExtraInformation(
-        dynamic Programs)
+    public record ListOrdersDetails(
+        IEnumerable<Order> Orders)
     {
     }
 }
