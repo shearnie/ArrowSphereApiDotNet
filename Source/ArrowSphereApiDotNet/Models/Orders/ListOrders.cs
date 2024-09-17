@@ -8,7 +8,8 @@ namespace ArrowSphereApiDotNet.Models.Orders
 {
     public record ListOrders(
         int Status,
-        ListOrdersDetails Data)
+        ListOrdersDetails Data,
+        Pagination Pagination)
     {
     }
 }
