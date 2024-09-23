@@ -37,5 +37,15 @@ namespace ArrowSphereApiDotNet
         {
             return await _client.PatchAsync<UpdateCustomerResponse>($"customers/{request.Reference}", JsonConvert.SerializeObject(request));
         }
+
+        public async Task<UpdateCustomerResponse> Provision(string customerReference, ProvisionOrMigrationRequest request)
+        {
+            return await _client.PostAsync<UpdateCustomerResponse>($"customers/{customerReference}/provision", JsonHelper.SerializeLowerCamel(request));
+        }
+
+        public async Task<UpdateCustomerResponse> Migration(string customerReference, ProvisionOrMigrationRequest request)
+        {
+            return await _client.PostAsync<UpdateCustomerResponse>($"customers/{customerReference}/migration", JsonHelper.SerializeLowerCamel(request));
+        }
     }
 }
