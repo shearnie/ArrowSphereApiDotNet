@@ -3,12 +3,14 @@
     public class ArrowConfig
     {
         private string _apiKey;
-        private string _apiBasePath = "https://xsp.arrow.com/index.php/api/";
+        private string _apiBasePath;
 
         public ArrowConfig(
-            string apiKey)
+            string apiKey,
+            string apiBasePath)
         {
             _apiKey = apiKey;
+            _apiBasePath = apiBasePath;
         }
 
         public string ApiKey => _apiKey;

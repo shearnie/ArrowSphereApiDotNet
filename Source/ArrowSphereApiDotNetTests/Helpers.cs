@@ -21,7 +21,7 @@ namespace ArrowSphereApiDotNetTests
             services.AddSingleton<IConfiguration>(config);
 
             return services
-                .AddArrow(config.GetValue<string>("Arrow:ApiKey"))
+                .AddArrow(config.GetValue<string>("Arrow:ApiKey"), config.GetValue<string>("Arrow:ApiBasePath"))
                 .BuildServiceProvider();
         }
     }
