@@ -25,7 +25,7 @@ namespace ArrowSphereApiDotNet.Models.Licenses
         string Message,
         Order Order,
         string Periodicity,
-        int PreiodicityCode,
+        int PeriodicityCode,
         Price Price,
         PriceBand PriceBand,
         string Program,

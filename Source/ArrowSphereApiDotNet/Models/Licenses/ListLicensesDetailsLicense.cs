@@ -27,7 +27,7 @@ namespace ArrowSphereApiDotNet.Models.Licenses
         string VendorBillingId,
         string Vendor_License_Id,
         string Periodicity,
-        int PreiodicityCode,
+        int PeriodicityCode,
         string Term,
         int TermCode,
         string Category,
