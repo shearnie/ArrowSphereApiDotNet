@@ -48,6 +48,11 @@ namespace ArrowSphereApiDotNet
             return new Billing(this);
         }
 
+        public Licenses GetLicenseClient()
+        {
+            return new Licenses(this);
+        }
+
 
         private HttpClient GetHttpClient()
         {
