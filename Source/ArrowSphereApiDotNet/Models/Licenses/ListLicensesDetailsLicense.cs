@@ -41,31 +41,3 @@ namespace ArrowSphereApiDotNet.Models.Licenses
     {
     }
 }
-/*
-{
-
-
-                "price": {
-                    "priceBandArrowsphereSku": "MS_IAAS_DZH318Z0BPS6_0001_USD",
-                    "currency": "USD",
-                    "unit": {
-                        "buy": 0,
-                        "sell": 0,
-                        "list": 0
-                    },
-                    "total": {
-                        "buy": 0,
-                        "sell": 0,
-                        "list": 0
-                    }
-                },
-
-                "priceBand": {
-                    "saleConstraints": {
-                        "minQuantity": 1,
-                        "maxQuantity": 1
-                    }
-                },
-
-            },
- */
