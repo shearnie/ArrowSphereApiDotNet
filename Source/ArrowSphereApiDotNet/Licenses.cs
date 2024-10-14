@@ -26,5 +26,10 @@ namespace ArrowSphereApiDotNet
         {
             return await _client.GetAsync<LicenseDetails>($"licenses/{licenseReference}");
         }
+
+        public async Task<UpdateLicenseResponse> UpdateLicense(string licenseReference, UpdateLicenseRequest request)
+        {
+            return await _client.PatchAsync<UpdateLicenseResponse>($"licenses/{licenseReference}", JsonConvert.SerializeObject(request));
+        }
     }
 }

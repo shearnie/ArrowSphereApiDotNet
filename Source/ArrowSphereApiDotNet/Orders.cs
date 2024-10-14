@@ -31,5 +31,10 @@ namespace ArrowSphereApiDotNet
         {
             return await _client.PostAsync<CreateOrderResponse>("orders", JsonConvert.SerializeObject(request));
         }
+
+        public async Task<CancelOrderResponse> CancelOrder(string orderReference)
+        {
+            return await _client.PatchAsync<CancelOrderResponse>($"orders/{orderReference}/cancel");
+        }
     }
 }

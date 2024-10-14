@@ -137,22 +137,28 @@ namespace ArrowSphereApiDotNet
             return await HandleResponseMessage<T>(get);
         }
 
-        public async Task<T> PostAsync<T>(string methodPath, string? jsonRequestContent)
+        public async Task<T> PostAsync<T>(string methodPath, string? jsonRequestContent = null)
         {
-            var post = await GetHttpClient().PostAsync(
-                _config.ApiBasePath + methodPath,
-                new StringContent(jsonRequestContent ?? string.Empty, Encoding.UTF8, "application/json"));
+            var post = jsonRequestContent != null
+                ? await GetHttpClient().PostAsync(
+                    _config.ApiBasePath + methodPath,
+                    new StringContent(jsonRequestContent ?? string.Empty, Encoding.UTF8, "application/json"))
+
+                : await GetHttpClient().PostAsync(_config.ApiBasePath + methodPath, null);
 
             return await HandleResponseMessage<T>(post);
         }
 
-        public async Task<T> PatchAsync<T>(string methodPath, string? jsonRequestContent)
+        public async Task<T> PatchAsync<T>(string methodPath, string? jsonRequestContent = null)
         {
-            var post = await GetHttpClient().PatchAsync(
-                _config.ApiBasePath + methodPath,
-                new StringContent(jsonRequestContent ?? string.Empty, Encoding.UTF8, "application/json"));
+            var patch = jsonRequestContent != null
+                ? await GetHttpClient().PatchAsync(
+                    _config.ApiBasePath + methodPath,
+                    new StringContent(jsonRequestContent ?? string.Empty, Encoding.UTF8, "application/json"))
 
-            return await HandleResponseMessage<T>(post);
+                : await GetHttpClient().PatchAsync(_config.ApiBasePath + methodPath, null);
+
+            return await HandleResponseMessage<T>(patch);
         }
     }
 }
