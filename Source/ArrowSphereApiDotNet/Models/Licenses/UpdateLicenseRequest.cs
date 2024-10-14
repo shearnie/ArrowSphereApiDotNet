@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace ArrowSphereApiDotNet.Models.Licenses
 {
-    public record UpdateLicenseRequest(
-        string FriendlyName,
-        int Seats,
-        int? OrganizationUnitId)
+    public class UpdateLicenseRequest()
     {
+        public string FriendlyName { get; set; } = string.Empty;
+        public int Seats { get; set; }
+        public int? OrganizationUnitId { get; set; } = null;
     }
 }
