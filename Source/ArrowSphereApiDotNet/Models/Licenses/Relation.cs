@@ -10,5 +10,8 @@ namespace ArrowSphereApiDotNet.Models.Licenses
         string PartnerRef,
         string Type)
     {
+        public Relation() : this(string.Empty, string.Empty)
+        {
+        }
     }
 }

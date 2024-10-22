@@ -15,5 +15,8 @@ namespace ArrowSphereApiDotNet.Models.Orders
         int PeriodicityCode,
         int TermCode)
     {
+        public Price() : this(default, default, string.Empty, string.Empty, string.Empty, default, default)
+        {
+        }
     }
 }

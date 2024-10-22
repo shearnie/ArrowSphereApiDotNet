@@ -16,5 +16,8 @@ namespace ArrowSphereApiDotNet.Models.Customers
         string IbmCustomerNumber,
         string IbmMaasAccountId)
     {
+        public CustomerDetail() : this(false, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty)
+        {
+        }
     }
 }

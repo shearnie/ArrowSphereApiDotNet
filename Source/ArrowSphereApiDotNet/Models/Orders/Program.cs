@@ -9,5 +9,8 @@ namespace ArrowSphereApiDotNet.Models.Orders
     public record Program(
         string LegacyCode)
     {
+        public Program() : this(string.Empty)
+        {
+        }
     }
 }

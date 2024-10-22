@@ -7,9 +7,9 @@ using System.Net.Http.Json;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ArrowSphereApiDotNet
+namespace ArrowSphereApiDotNet.Impl
 {
-    public class Customers
+    public class Customers : ICustomers
     {
         private readonly ArrowClient _client;
 

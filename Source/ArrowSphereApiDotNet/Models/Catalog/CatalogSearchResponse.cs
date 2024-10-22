@@ -11,5 +11,8 @@ namespace ArrowSphereApiDotNet.Models.Catalog
         IEnumerable<Filter> Filters,
         Pagination Pagination)
     {
+        public CatalogSearchResponse() : this(new List<Product>(), new List<Filter>(), new Pagination())
+        {
+        }
     }
 }

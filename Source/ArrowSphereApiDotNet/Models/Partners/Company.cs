@@ -25,5 +25,9 @@ namespace ArrowSphereApiDotNet.Models.Partners
         string InternalReference,
         User User)
     {
+        public Company() : this(string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, default,
+                                string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, new User())
+        {
+        }
     }
 }

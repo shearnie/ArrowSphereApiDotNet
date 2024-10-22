@@ -11,5 +11,8 @@ namespace ArrowSphereApiDotNet.Models.Licenses
         string Error,
         IEnumerable<string> Messages)
     {
+        public UpdateLicenseResponse() : this(default, string.Empty, new List<string>())
+        {
+        }
     }
 }

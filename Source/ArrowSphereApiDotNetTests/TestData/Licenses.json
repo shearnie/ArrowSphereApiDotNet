@@ -1,0 +1,310 @@
+﻿{
+  "Status": 200,
+  "Data": {
+    "Licenses": [
+      {
+        "License_Id": "XSP3598817",
+        "Parent_License_Id": null,
+        "FriendlyName": "Cloud Demo",
+        "Customer_Ref": "XSP111111",
+        "State": "active",
+        "StatusCode": 86,
+        "IsTrial": false,
+        "IsAddon": false,
+        "Service_Ref": "MICROSOFT",
+        "Sku": "DZH318Z0BPS6:0001",
+        "Name": "Microsoft Azure Subscription (Azure Plan)",
+        "Seats": 1,
+        "ActiveSeats": {
+          "Number": null,
+          "LastUpdate": null
+        },
+        "Activation_Datetime": "2020-06-08T00:00:00Z",
+        "Expiry_Datetime": "9020-06-08T15:14:45Z",
+        "Message": "",
+        "Order": {
+          "Reference": "XSPO987717",
+          "Link": "/api/orders/XSPO987717"
+        },
+        "VendorBillingId": "cd157c24-eeab-44ce-991c-4c760c2dd4ce",
+        "Vendor_License_Id": "cd157c24-eeab-44ce-991c-4c760c2dd4ce",
+        "Periodicity": "per Month",
+        "PeriodicityCode": 720,
+        "Term": "No Term",
+        "TermCode": 0,
+        "Category": "IaaS",
+        "Program": "Microsoft",
+        "AssociatedSubscriptionProgram": "MSCSP",
+        "AutoRenew": true,
+        "Price": {
+          "PriceBandArrowsphereSku": "MS_IAAS_DZH318Z0BPS6_0001_USD",
+          "Currency": "USD",
+          "Unit": {
+            "Buy": 0.0,
+            "Sell": 0.0,
+            "List": 0.0
+          },
+          "Total": {
+            "Buy": 0.0,
+            "Sell": 0.0,
+            "List": 0.0
+          }
+        },
+        "ArrowSubCategories": [],
+        "PriceBand": {
+          "Billing": { "Type": "" },
+          "SaleConstraints": {
+            "MinQuantity": 1,
+            "MaxQuantity": 1
+          },
+          "Attributes": []
+        },
+        "Vendor_Code": "Microsoft"
+      },
+      {
+        "License_Id": "XSP4092046",
+        "Parent_License_Id": null,
+        "FriendlyName": null,
+        "Customer_Ref": "XSP111111",
+        "State": "active",
+        "StatusCode": 86,
+        "IsTrial": false,
+        "IsAddon": false,
+        "Service_Ref": "AWS_AMAZON_SUBSCRIPTION",
+        "Sku": "AWS-SUB-0003",
+        "Name": "AWS Solution Provider Account Model (SPAM)",
+        "Seats": 1,
+        "ActiveSeats": {
+          "Number": null,
+          "LastUpdate": null
+        },
+        "Activation_Datetime": "2021-03-22T15:15:47Z",
+        "Expiry_Datetime": "9021-03-22T15:15:47Z",
+        "Message": "",
+        "Order": {
+          "Reference": "XSPO1459373",
+          "Link": "/api/orders/XSPO1459373"
+        },
+        "VendorBillingId": null,
+        "Vendor_License_Id": "047006228126",
+        "Periodicity": "per Month",
+        "PeriodicityCode": 720,
+        "Term": "No Term",
+        "TermCode": 0,
+        "Category": "IaaS",
+        "Program": "Amazon",
+        "AssociatedSubscriptionProgram": "AWS-RESELLER",
+        "AutoRenew": true,
+        "Price": {
+          "PriceBandArrowsphereSku": "AWS-SUB-0003_USD",
+          "Currency": "USD",
+          "Unit": {
+            "Buy": 0.0,
+            "Sell": 0.0,
+            "List": 0.0
+          },
+          "Total": {
+            "Buy": 0.0,
+            "Sell": 0.0,
+            "List": 0.0
+          }
+        },
+        "ArrowSubCategories": [],
+        "PriceBand": {
+          "Billing": { "Type": "" },
+          "SaleConstraints": {
+            "MinQuantity": 1,
+            "MaxQuantity": 1
+          },
+          "Attributes": []
+        },
+        "Vendor_Code": "aws"
+      },
+      {
+        "License_Id": "XSP4092988",
+        "Parent_License_Id": null,
+        "FriendlyName": null,
+        "Customer_Ref": "XSP222222",
+        "State": "active",
+        "StatusCode": 86,
+        "IsTrial": false,
+        "IsAddon": false,
+        "Service_Ref": "AWS_AMAZON_SUBSCRIPTION",
+        "Sku": "AWS-SUB-0003",
+        "Name": "AWS Solution Provider Account Model (SPAM)",
+        "Seats": 1,
+        "ActiveSeats": {
+          "Number": null,
+          "LastUpdate": null
+        },
+        "Activation_Datetime": "2021-03-22T15:46:34Z",
+        "Expiry_Datetime": "9021-03-22T15:46:34Z",
+        "Message": "",
+        "Order": {
+          "Reference": "XSPO1459436",
+          "Link": "/api/orders/XSPO1459436"
+        },
+        "VendorBillingId": null,
+        "Vendor_License_Id": "336014339221",
+        "Periodicity": "per Month",
+        "PeriodicityCode": 720,
+        "Term": "No Term",
+        "TermCode": 0,
+        "Category": "IaaS",
+        "Program": "Amazon",
+        "AssociatedSubscriptionProgram": "AWS-RESELLER",
+        "AutoRenew": true,
+        "Price": {
+          "PriceBandArrowsphereSku": "AWS-SUB-0003_USD",
+          "Currency": "USD",
+          "Unit": {
+            "Buy": 0.0,
+            "Sell": 0.0,
+            "List": 0.0
+          },
+          "Total": {
+            "Buy": 0.0,
+            "Sell": 0.0,
+            "List": 0.0
+          }
+        },
+        "ArrowSubCategories": [],
+        "PriceBand": {
+          "Billing": { "Type": "" },
+          "SaleConstraints": {
+            "MinQuantity": 1,
+            "MaxQuantity": 1
+          },
+          "Attributes": []
+        },
+        "Vendor_Code": "aws"
+      },
+      {
+        "License_Id": "XSP3586633",
+        "Parent_License_Id": null,
+        "FriendlyName": "Research Dept O365",
+        "Customer_Ref": "XSP111111",
+        "State": "canceled",
+        "StatusCode": 89,
+        "IsTrial": false,
+        "IsAddon": false,
+        "Service_Ref": "MS-0B-O365-ENTERPRIS",
+        "Sku": "6FBAD345-B7DE-42A6-B6AB-79B363D0B371",
+        "Name": "Office 365 F3 [formerly Office 365 F1]",
+        "Seats": 1,
+        "ActiveSeats": {
+          "Number": 0,
+          "LastUpdate": "2021-08-12T13:08:58Z"
+        },
+        "Activation_Datetime": "2021-06-03T00:00:00Z",
+        "Expiry_Datetime": "2022-05-19T07:20:32Z",
+        "Message": "",
+        "Order": {
+          "Reference": "XSPO974033",
+          "Link": "/api/orders/XSPO974033"
+        },
+        "VendorBillingId": null,
+        "Vendor_License_Id": "5dde8c16-ca64-4581-8f84-a520bc5daa59",
+        "Periodicity": "per Month",
+        "PeriodicityCode": 720,
+        "Term": "1 Year",
+        "TermCode": 8640,
+        "Category": "SaaS",
+        "Program": "Microsoft",
+        "AssociatedSubscriptionProgram": "MSCSP",
+        "AutoRenew": true,
+        "Price": {
+          "PriceBandArrowsphereSku": "MS_6FBAD345_B7DE_42A6_B6AB_79B363D0B371_USD_1_RECURRING_SEAT",
+          "Currency": "USD",
+          "Unit": {
+            "Buy": 3.4,
+            "Sell": 4.0,
+            "List": 4.0
+          },
+          "Total": {
+            "Buy": 3.4,
+            "Sell": 4.0,
+            "List": 4.0
+          }
+        },
+        "ArrowSubCategories": [],
+        "PriceBand": {
+          "Billing": { "Type": "" },
+          "SaleConstraints": {
+            "MinQuantity": 0,
+            "MaxQuantity": 0
+          },
+          "Attributes": []
+        },
+        "Vendor_Code": "Microsoft"
+      },
+      {
+        "License_Id": "XSP3720939",
+        "Parent_License_Id": null,
+        "FriendlyName": "Enterprise Admin Team",
+        "Customer_Ref": "XSP111111",
+        "State": "canceled",
+        "StatusCode": 89,
+        "IsTrial": false,
+        "IsAddon": false,
+        "Service_Ref": "MS-0B-O365-ENTERPRIS",
+        "Sku": "796B6B5F-613C-4E24-A17C-EBA730D49C02",
+        "Name": "Office 365 E3",
+        "Seats": 1,
+        "ActiveSeats": {
+          "Number": 0,
+          "LastUpdate": "2022-01-20T10:08:45Z"
+        },
+        "Activation_Datetime": "2021-07-25T00:00:00Z",
+        "Expiry_Datetime": "2022-05-20T20:24:21Z",
+        "Message": "",
+        "Order": {
+          "Reference": "XSPO1110307",
+          "Link": "/api/orders/XSPO1110307"
+        },
+        "VendorBillingId": null,
+        "Vendor_License_Id": "fac570ad-dc68-4a59-a14c-173167aed1b8",
+        "Periodicity": "per Month",
+        "PeriodicityCode": 720,
+        "Term": "1 Year",
+        "TermCode": 8640,
+        "Category": "SaaS",
+        "Program": "Microsoft",
+        "AssociatedSubscriptionProgram": "MSCSP",
+        "AutoRenew": true,
+        "Price": {
+          "PriceBandArrowsphereSku": "MS_796B6B5F_613C_4E24_A17C_EBA730D49C02_USD_1_RECURRING_SEAT",
+          "Currency": "USD",
+          "Unit": {
+            "Buy": 17.0,
+            "Sell": 20.0,
+            "List": 20.0
+          },
+          "Total": {
+            "Buy": 17.0,
+            "Sell": 20.0,
+            "List": 20.0
+          }
+        },
+        "ArrowSubCategories": [],
+        "PriceBand": {
+          "Billing": { "Type": "" },
+          "SaleConstraints": {
+            "MinQuantity": 0,
+            "MaxQuantity": 0
+          },
+          "Attributes": []
+        },
+        "Vendor_Code": "Microsoft"
+      }
+    ]
+  },
+  "Pagination": {
+    "Per_Page": 15,
+    "Current_Page": 0,
+    "Total_Page": 1,
+    "Total": 5,
+    "Next": "/v2/licenses?search_after=2550921",
+    "Previous": "/v2/licenses?search_before=1343637"
+  }
+}

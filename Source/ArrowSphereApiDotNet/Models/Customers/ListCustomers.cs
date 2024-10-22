@@ -11,5 +11,8 @@ namespace ArrowSphereApiDotNet.Models.Customers
         ListCustomersData Data,
         Pagination Pagination)
     {
+        public ListCustomers() : this(default, new ListCustomersData(), new Pagination())
+        {
+        }
     }
 }

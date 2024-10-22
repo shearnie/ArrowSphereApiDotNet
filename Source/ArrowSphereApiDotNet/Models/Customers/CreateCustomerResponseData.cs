@@ -9,5 +9,8 @@ namespace ArrowSphereApiDotNet.Models.Customers
 	public record CreateCustomerResponseData(
         string Reference)
     {
+        public CreateCustomerResponseData() : this(string.Empty)
+        {
+        }
     }
 }

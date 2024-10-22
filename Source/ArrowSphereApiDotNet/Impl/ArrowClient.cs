@@ -3,9 +3,9 @@ using System;
 using System.Net.Http.Json;
 using System.Text;
 
-namespace ArrowSphereApiDotNet
+namespace ArrowSphereApiDotNet.Impl
 {
-    public class ArrowClient
+    public class ArrowClient : IArrowClient
     {
         private readonly ArrowConfig _config;
         private readonly HttpClient _httpClient;
@@ -18,37 +18,37 @@ namespace ArrowSphereApiDotNet
             _httpClient = httpClientFactory.CreateClient();
         }
 
-        public Partners GetPartnersClient()
+        public IPartners GetPartnersClient()
         {
             return new Partners(this);
         }
 
-        public Customers GetCustomersClient()
+        public ICustomers GetCustomersClient()
         {
             return new Customers(this);
         }
 
-		public Catalog GetCatalogClient()
-		{
-			return new Catalog(this);
-		}
-
-		public Subscriptions GetSubscriptionsClient()
-		{
-			return new Subscriptions(this);
+        public ICatalog GetCatalogClient()
+        {
+            return new Catalog(this);
         }
 
-        public Orders GetOrdersClient()
+        public ISubscriptions GetSubscriptionsClient()
+        {
+            return new Subscriptions(this);
+        }
+
+        public IOrders GetOrdersClient()
         {
             return new Orders(this);
         }
 
-        public Billing GetBillingClient()
+        public IBilling GetBillingClient()
         {
             return new Billing(this);
         }
 
-        public Licenses GetLicenseClient()
+        public ILicenses GetLicenseClient()
         {
             return new Licenses(this);
         }
@@ -119,9 +119,9 @@ namespace ArrowSphereApiDotNet
             {
                 var rs = await response.Content.ReadFromJsonAsync<ArrowError>();
                 if (rs == null || rs.Status == 0)
-				{
-					throw new ApplicationException($"Unhandled Error, code: {response.StatusCode}.");
-				}
+                {
+                    throw new ApplicationException($"Unhandled Error, code: {response.StatusCode}.");
+                }
                 throw new ArrowException()
                 {
                     ArrowError = rs

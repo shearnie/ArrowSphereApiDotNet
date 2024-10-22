@@ -12,5 +12,8 @@ namespace ArrowSphereApiDotNet.Models
         string ErrorCode,
         string CorrelationId)
     {
+        public ArrowError() : this(default, string.Empty, string.Empty, string.Empty)
+        {
+        }
     }
 }

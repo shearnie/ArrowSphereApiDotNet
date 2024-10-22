@@ -39,5 +39,10 @@ namespace ArrowSphereApiDotNet.Models.Licenses
         PriceBand PriceBand,
         string Vendor_Code)
     {
+        public ListLicensesDetailsLicense() : this(string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, default, false, false, string.Empty, string.Empty, string.Empty,
+                                                   default, new ActiveSeats(), default, default, string.Empty, new Order(), string.Empty, string.Empty, string.Empty, default, string.Empty,
+                                                   default, string.Empty, string.Empty, string.Empty, false, new Price(), new List<string>(), new PriceBand(), string.Empty)
+        {
+        }
     }
 }

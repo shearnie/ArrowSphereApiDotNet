@@ -1,0 +1,247 @@
+﻿{
+  "Status": 200,
+  "Data": {
+    "Orders": [
+      {
+        "Order_Reference": "O_ARWS-V7-3a858bfe-222222",
+        "Reference": "XSPO811759",
+        "Status": "Fulfilled",
+        "DateStatus": "2020-03-16 16:45:58",
+        "DateCreation": "2020-03-16 16:45:47",
+        "PoNumber": null,
+        "Partner": {
+          "CompanyName": "Arrow Demo",
+          "Contact": {
+            "Email": "test@org.org",
+            "FirstName": "Pierre",
+            "LastName": "Test"
+          }
+        },
+        "Customer": {
+          "Reference": "XSP222222",
+          "Link": "/api/customers/XSP222222"
+        },
+        "Products": [
+          {
+            "Sku": "SAAS||Microsoft||MS-0A-O365-BUSINESS||C0BD2E08-11AC-4836-BDC7-3712E744922F",
+            "Name": "Office 365 Business Premium Trial",
+            "Classification": "SAAS",
+            "Program": { "LegacyCode": "microsoft" },
+            "Identifiers": { "Vendor": { "Sku": "C0BD2E08-11AC-4836-BDC7-3712E744922F" } },
+            "Quantity": 25,
+            "Status": "Provisioned",
+            "DateStatus": "",
+            "IsAddon": false,
+            "IsTrial": true,
+            "ArrowSubCategories": [ "onlineservices" ],
+            "DetailedStatus": "",
+            "Prices": {
+              "Buy": 0.0,
+              "Sell": 0.0,
+              "Currency": "USD",
+              "Periodicity": "per Month",
+              "Term": "Month-to-Month",
+              "PeriodicityCode": 720,
+              "TermCode": 720
+            },
+            "Subscription": {
+              "Reference": "XSPS11111",
+              "Link": "/api/subscriptions/XSPS11111"
+            },
+            "License": {
+              "Reference": "XSP3182974",
+              "Link": "/api/licenses/XSP3182974"
+            },
+            "VendorName": "Microsoft",
+            "ProgramName": "Microsoft Cloud Solution Provider (CSP)"
+          }
+        ],
+        "CreatedBy": "Pierre Test",
+        "CreatedByImpersonator": "",
+        "CommitmentAmountTotal": 0.0
+      },
+      {
+        "Order_Reference": "O_ARWS-V7-d6006d78-222222",
+        "Reference": "XSPO974033",
+        "Status": "Fulfilled",
+        "DateStatus": "2020-06-02 17:12:27",
+        "DateCreation": "2020-06-02 17:12:19",
+        "PoNumber": null,
+        "Partner": {
+          "CompanyName": "Arrow Demo",
+          "Contact": {
+            "Email": "test@org.org",
+            "FirstName": "Pierre",
+            "LastName": "Test"
+          }
+        },
+        "Customer": {
+          "Reference": "XSP111111",
+          "Link": "/api/customers/XSP111111"
+        },
+        "Products": [
+          {
+            "Sku": "SAAS||Microsoft||MS-0B-O365-ENTERPRIS||6FBAD345-B7DE-42A6-B6AB-79B363D0B371",
+            "Name": "Office 365 F3 [formerly Office 365 F1]",
+            "Classification": "SAAS",
+            "Program": { "LegacyCode": "microsoft" },
+            "Identifiers": { "Vendor": { "Sku": "6FBAD345-B7DE-42A6-B6AB-79B363D0B371" } },
+            "Quantity": 1,
+            "Status": "Provisioned",
+            "DateStatus": "",
+            "IsAddon": false,
+            "IsTrial": false,
+            "ArrowSubCategories": [ "onlineservices" ],
+            "DetailedStatus": "",
+            "Prices": {
+              "Buy": 3.52,
+              "Sell": 4.0,
+              "Currency": "USD",
+              "Periodicity": "per Month",
+              "Term": "1 Year",
+              "PeriodicityCode": 720,
+              "TermCode": 8640
+            },
+            "Subscription": {
+              "Reference": "XSPS11111",
+              "Link": "/api/subscriptions/XSPS11111"
+            },
+            "License": {
+              "Reference": "XSP3586633",
+              "Link": "/api/licenses/XSP3586633"
+            },
+            "VendorName": "Microsoft",
+            "ProgramName": "Microsoft Cloud Solution Provider (CSP)"
+          }
+        ],
+        "CreatedBy": "Pierre Test",
+        "CreatedByImpersonator": "Pierre Test",
+        "CommitmentAmountTotal": 42.24
+      },
+      {
+        "Order_Reference": "O_ARWS-V7-f846eabf-222222",
+        "Reference": "XSPO974041",
+        "Status": "Fulfilled",
+        "DateStatus": "2020-06-02 17:13:24",
+        "DateCreation": "2020-06-02 17:13:19",
+        "PoNumber": null,
+        "Partner": {
+          "CompanyName": "Arrow Demo",
+          "Contact": {
+            "Email": "test@org.org",
+            "FirstName": "Pierre",
+            "LastName": "Test"
+          }
+        },
+        "Customer": {
+          "Reference": "XSP111111",
+          "Link": "/api/customers/XSP111111"
+        },
+        "Products": [
+          {
+            "Sku": "IAAS||Microsoft||MICROSOFT||MS-AZR-0145P",
+            "Name": "Microsoft Azure Account (Legacy)",
+            "Classification": "IAAS",
+            "Program": { "LegacyCode": "microsoft" },
+            "Identifiers": { "Vendor": { "Sku": "MS-AZR-0145P" } },
+            "Quantity": 1,
+            "Status": "Provisioned",
+            "DateStatus": "",
+            "IsAddon": false,
+            "IsTrial": false,
+            "ArrowSubCategories": [],
+            "DetailedStatus": "",
+            "Prices": {
+              "Buy": 0.0,
+              "Sell": 0.0,
+              "Currency": "USD",
+              "Periodicity": "per Month",
+              "Term": "No Term",
+              "PeriodicityCode": 720,
+              "TermCode": 0
+            },
+            "Subscription": {
+              "Reference": "XSPS11111",
+              "Link": "/api/subscriptions/XSPS11111"
+            },
+            "License": {
+              "Reference": "XSP3586641",
+              "Link": "/api/licenses/XSP3586641"
+            },
+            "VendorName": "Microsoft",
+            "ProgramName": "Microsoft Cloud Solution Provider (CSP)"
+          }
+        ],
+        "CreatedBy": "Pierre Test",
+        "CreatedByImpersonator": "Pierre Test",
+        "CommitmentAmountTotal": 0.0
+      },
+      {
+        "Order_Reference": "O_ARWS-V7-3f64370e-222222",
+        "Reference": "XSPO974938",
+        "Status": "Fulfilled",
+        "DateStatus": "2020-06-02 17:15:00",
+        "DateCreation": "2020-06-02 17:14:55",
+        "PoNumber": null,
+        "Partner": {
+          "CompanyName": "Arrow Demo",
+          "Contact": {
+            "Email": "test@org.org",
+            "FirstName": "Pierre",
+            "LastName": "Test"
+          }
+        },
+        "Customer": {
+          "Reference": "XSP111111",
+          "Link": "/api/customers/XSP111111"
+        },
+        "Products": [
+          {
+            "Sku": "SAAS||Microsoft||MS-0B-O365-ENTERPRIS||DD3496BA-A49B-4475-9F40-8C333709EF87",
+            "Name": "Microsoft Teams Commercial Cloud Trial  (6 Months, 3000 users)",
+            "Classification": "SAAS",
+            "Program": { "LegacyCode": "microsoft" },
+            "Identifiers": { "Vendor": { "Sku": "DD3496BA-A49B-4475-9F40-8C333709EF87" } },
+            "Quantity": 3000,
+            "Status": "Provisioned",
+            "DateStatus": "",
+            "IsAddon": false,
+            "IsTrial": true,
+            "ArrowSubCategories": [ "onlineservices" ],
+            "DetailedStatus": "",
+            "Prices": {
+              "Buy": 0.0,
+              "Sell": 0.0,
+              "Currency": "USD",
+              "Periodicity": "per Month",
+              "Term": "6 Months",
+              "PeriodicityCode": 720,
+              "TermCode": 4320
+            },
+            "Subscription": {
+              "Reference": "XSPS11111",
+              "Link": "/api/subscriptions/XSPS11111"
+            },
+            "License": {
+              "Reference": "XSP3586750",
+              "Link": "/api/licenses/XSP3586750"
+            },
+            "VendorName": "Microsoft",
+            "ProgramName": "Microsoft Cloud Solution Provider (CSP)"
+          }
+        ],
+        "CreatedBy": "Pierre Test",
+        "CreatedByImpersonator": "Pierre Test",
+        "CommitmentAmountTotal": 0.0
+      }
+    ]
+  },
+  "Pagination": {
+    "Per_Page": 25,
+    "Current_Page": 1,
+    "Total_Page": 1,
+    "Total": 4,
+    "Next": "/orders?page=2&perPage=25",
+    "Previous": null
+  }
+}

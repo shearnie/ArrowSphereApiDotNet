@@ -11,5 +11,8 @@ namespace ArrowSphereApiDotNet.Models.Licenses
         decimal Sell,
         decimal List)
     {
+        public PriceDetail() : this(default, default, default)
+        {
+        }
     }
 }

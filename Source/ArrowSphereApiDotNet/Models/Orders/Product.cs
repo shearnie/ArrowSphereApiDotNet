@@ -25,5 +25,9 @@ namespace ArrowSphereApiDotNet.Models.Orders
         string VendorName,
         string ProgramName)
     {
+        public Product() : this(string.Empty, string.Empty, string.Empty, new Program(), new Identifier(), default, string.Empty, string.Empty, false, false, new List<string>(), string.Empty,
+                                new Price(), new Subscription(), new License(), string.Empty, string.Empty)
+        {
+        }
     }
 }

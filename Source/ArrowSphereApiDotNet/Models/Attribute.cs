@@ -10,5 +10,8 @@ namespace ArrowSphereApiDotNet.Models
         string Name,
         string Value)
     {
+        public Attribute() : this(string.Empty, string.Empty)
+        {
+        }
     }
 }

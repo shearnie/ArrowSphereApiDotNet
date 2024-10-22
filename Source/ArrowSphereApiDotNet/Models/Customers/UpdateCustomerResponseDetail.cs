@@ -35,5 +35,11 @@ namespace ArrowSphereApiDotNet.Models.Customers
         DateTime CreatedAt,
         DateTime? DeletedAt)
     {
+        public UpdateCustomerResponseDetail() : this(string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty,
+                                                     string.Empty, string.Empty, string.Empty, string.Empty, default, string.Empty, string.Empty, string.Empty, string.Empty,
+                                                     string.Empty, new Reseller(), string.Empty, new Contact(), new OrganizationUnit(), new CustomerDetail(), new ExtraInformation(),
+                                                     default, null)
+        {
+        }
     }
 }

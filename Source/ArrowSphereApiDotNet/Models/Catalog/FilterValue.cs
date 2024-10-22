@@ -9,6 +9,9 @@ namespace ArrowSphereApiDotNet.Models.Catalog
 	public record FilterValue(
         string Value,
         int Count)
-	{
+    {
+        public FilterValue() : this(string.Empty, default)
+        {
+        }
     }
 }

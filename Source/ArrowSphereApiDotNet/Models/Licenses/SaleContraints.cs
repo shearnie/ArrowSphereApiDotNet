@@ -10,5 +10,8 @@ namespace ArrowSphereApiDotNet.Models.Licenses
         int MinQuantity,
         int MaxQuantity)
     {
+        public SaleConstraints() : this(default, default)
+        {
+        }
     }
 }

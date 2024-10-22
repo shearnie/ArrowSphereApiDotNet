@@ -10,5 +10,8 @@ namespace ArrowSphereApiDotNet.Models.Orders
         int Status,
         CancelOrderResponseData Data)
     {
-	}
+        public CancelOrderResponse() : this(default, new CancelOrderResponseData())
+        {
+        }
+    }
 }

@@ -1,14 +1,9 @@
 ﻿using ArrowSphereApiDotNet.Models.Partners;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http.Json;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ArrowSphereApiDotNet
+namespace ArrowSphereApiDotNet.Impl
 {
-    public class Partners
+    public class Partners : IPartners
     {
         private readonly ArrowClient _client;
 

@@ -11,5 +11,8 @@ namespace ArrowSphereApiDotNet.Models.Licenses
         ListLicensesDetails Data,
         Pagination Pagination)
     {
+        public ListLicenses() : this(default, new ListLicensesDetails(), new Pagination())
+        {
+        }
     }
 }

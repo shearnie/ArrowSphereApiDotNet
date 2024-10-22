@@ -11,5 +11,8 @@ namespace ArrowSphereApiDotNet.Models.Orders
         string FirstName,
         string LastName)
     {
+        public PartnerContact() : this(string.Empty, string.Empty, string.Empty)
+        {
+        }
     }
 }

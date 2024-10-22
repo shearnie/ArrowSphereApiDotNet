@@ -11,8 +11,11 @@ namespace ArrowSphereApiDotNet.Models
         int Current_Page,
         int Total_Page,
         int Total,
-        string Next,
-        string Previous)
+        string? Next,
+        string? Previous)
     {
+        public Pagination() : this(default, default, default, default, string.Empty, string.Empty)
+        {
+        }
     }
 }

@@ -9,5 +9,8 @@ namespace ArrowSphereApiDotNet.Models.Licenses
     public record Billing(
         string Type)
     {
+        public Billing() : this(string.Empty)
+        {
+        }
     }
 }

@@ -10,5 +10,8 @@ namespace ArrowSphereApiDotNet.Models.Licenses
         int? Number,
         DateTime? LastUpdate)
     {
+        public ActiveSeats() : this(null, null)
+        {
+        }
     }
 }

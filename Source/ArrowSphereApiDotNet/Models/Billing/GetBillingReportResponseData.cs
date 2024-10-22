@@ -8,7 +8,10 @@ namespace ArrowSphereApiDotNet.Models.Billing
 {
     public record GetBillingReportResponseData(
         IEnumerable<string> Headers,
-        IEnumerable<IEnumerable<dynamic>> Values)
+        IEnumerable<IEnumerable<string>> Values)
     {
+        public GetBillingReportResponseData() : this(new List<string>(), new List<List<string>>())
+        {
+        }
     }
 }

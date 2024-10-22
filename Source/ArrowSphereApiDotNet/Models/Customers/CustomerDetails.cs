@@ -10,5 +10,8 @@ namespace ArrowSphereApiDotNet.Models.Customers
         int Status,
         ListCustomersData Data)
     {
+        public CustomerDetails() : this(default, new ListCustomersData())
+        {
+        }
     }
 }

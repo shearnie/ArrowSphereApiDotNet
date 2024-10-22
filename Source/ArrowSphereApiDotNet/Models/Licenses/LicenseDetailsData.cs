@@ -9,5 +9,8 @@ namespace ArrowSphereApiDotNet.Models.Licenses
     public record LicenseDetailsData(
         LicenseDetailsLicense License)
     {
+        public LicenseDetailsData() : this(new LicenseDetailsLicense())
+        {
+        }
     }
 }

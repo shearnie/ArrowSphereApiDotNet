@@ -17,6 +17,9 @@ namespace ArrowSphereApiDotNet.Models.Catalog
         string Currency,
         int Period_As_Hours,
         int Term_As_Hours)
-	{
+    {
+        public Price() : this(default, default, default, default, string.Empty, string.Empty, string.Empty, string.Empty, default, default)
+        {
+        }
     }
 }

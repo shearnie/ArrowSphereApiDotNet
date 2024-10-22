@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using ArrowSphereApiDotNet.Impl;
+using ArrowSphereApiDotNet.Mocks;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +15,16 @@ namespace ArrowSphereApiDotNet
         {
             services.AddHttpClient();
             services.AddScoped(i => new ArrowConfig(apiKey, apiBasePath ?? "https://xsp.arrow.com/index.php/api/"));
-            services.AddScoped<ArrowClient>();
+            services.AddScoped<IArrowClient, ArrowClient>();
+            return services;
+        }
+
+        public static IServiceCollection AddArrowForTesting(this IServiceCollection services, MockData testData)
+        {
+            services.AddHttpClient();
+            services.AddScoped(i => new ArrowConfig(string.Empty, string.Empty));
+            services.AddScoped<IArrowClient, MockArrowClient>();
+            services.AddScoped(i => testData);
             return services;
         }
     }

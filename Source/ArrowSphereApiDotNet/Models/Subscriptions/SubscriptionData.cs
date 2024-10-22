@@ -11,11 +11,14 @@ namespace ArrowSphereApiDotNet.Models.Subscriptions
         string Name,
         string Status,
         DateTime DateDemand,
-        DateTime DateValidation,
+        string DateValidation,
         DateTime DateEnd,
         string Level,
 		SubscriptionDetail Details,
-		dynamic ExtraInformation)
+		dynamic? ExtraInformation)
     {
-	}
+        public SubscriptionData() : this(string.Empty, string.Empty, string.Empty, default, string.Empty, default, string.Empty, new SubscriptionDetail(), null)
+        {
+        }
+    }
 }

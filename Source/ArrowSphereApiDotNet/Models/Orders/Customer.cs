@@ -10,5 +10,8 @@ namespace ArrowSphereApiDotNet.Models.Orders
         string Reference,
         string Link)
     {
+        public Customer() : this(string.Empty, string.Empty)
+        {
+        }
     }
 }

@@ -14,5 +14,8 @@ namespace ArrowSphereApiDotNet.Models
         string Role,
         string Code)
     {
+        public User() : this(string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty)
+        {
+        }
     }
 }

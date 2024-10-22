@@ -9,6 +9,9 @@ namespace ArrowSphereApiDotNet.Models.Catalog
 	public record Filter(
         string Name,
         IEnumerable<FilterValue> Values)
-	{
+    {
+        public Filter() : this(string.Empty, new List<FilterValue>())
+        {
+        }
     }
 }

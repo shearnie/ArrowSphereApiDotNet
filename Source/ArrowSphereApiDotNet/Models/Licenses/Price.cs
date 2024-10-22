@@ -12,5 +12,8 @@ namespace ArrowSphereApiDotNet.Models.Licenses
         PriceDetail Unit,
         PriceDetail Total)
     {
+        public Price() : this(string.Empty, string.Empty, new PriceDetail(), new PriceDetail())
+        {
+        }
     }
 }

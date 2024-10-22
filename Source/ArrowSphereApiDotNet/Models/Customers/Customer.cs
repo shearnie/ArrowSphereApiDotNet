@@ -35,7 +35,7 @@ namespace ArrowSphereApiDotNet.Models.Customers
         string Type,
         Contact Contact,
         OrganizationUnit OrganizationUnit,
-        string Reseller,
+        Reseller Reseller,
         CustomerDetail Details,
         ExtraInformation ExtraInformation,
         DateTime CreatedAt,
@@ -46,5 +46,12 @@ namespace ArrowSphereApiDotNet.Models.Customers
         string Isr,
         string Fsr)
     {
+        public Customer() : this(string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty,
+                                 string.Empty, string.Empty, string.Empty, string.Empty, default, string.Empty, string.Empty, string.Empty,
+                                 string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty,
+                                 new Contact(), new OrganizationUnit(), new Reseller(), new CustomerDetail(), new ExtraInformation(), default, null, false, new List<string>(),
+                                 string.Empty, string.Empty, string.Empty)
+        {
+        }
     }
 }

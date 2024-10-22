@@ -34,6 +34,13 @@ namespace ArrowSphereApiDotNet.Models.Catalog
 		IEnumerable<dynamic> Prerequisites,
 		IEnumerable<string> Add_Ons,
 		string Orderable_Sku)
-	{
-	}
+    {
+        public Product() : this(
+			string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, 
+			new List<dynamic>(), new List<string>(), string.Empty, string.Empty, string.Empty, new List<string>(),
+            false, false, false, string.Empty, string.Empty, new List<Price>(), new List<string>(),
+			default, default, false, new Program(), new List<dynamic>(), new List<string>(), string.Empty)
+        {
+        }
+    }
 }

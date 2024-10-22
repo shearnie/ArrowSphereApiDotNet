@@ -9,5 +9,8 @@ namespace ArrowSphereApiDotNet.Models.Orders
     public record Vendor(
         string Sku)
     {
+        public Vendor() : this(string.Empty)
+        {
+        }
     }
 }

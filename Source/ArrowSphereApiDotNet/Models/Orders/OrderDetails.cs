@@ -10,5 +10,8 @@ namespace ArrowSphereApiDotNet.Models.Orders
         int Status,
         OrderDetail Data)
     {
+        public OrderDetails() : this(default, new OrderDetail())
+        {
+        }
     }
 }

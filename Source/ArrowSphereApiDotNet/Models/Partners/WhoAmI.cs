@@ -10,5 +10,8 @@ namespace ArrowSphereApiDotNet.Models.Partners
         int Status,
         Company Data)
     {
+        public WhoAmI() : this(default, new Company())
+        {
+        }
     }
 }

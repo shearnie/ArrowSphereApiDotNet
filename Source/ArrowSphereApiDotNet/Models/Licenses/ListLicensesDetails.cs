@@ -9,5 +9,8 @@ namespace ArrowSphereApiDotNet.Models.Licenses
     public record ListLicensesDetails(
         IEnumerable<ListLicensesDetailsLicense> Licenses)
     {
+        public ListLicensesDetails() : this(new List<ListLicensesDetailsLicense>())
+        {
+        }
     }
 }

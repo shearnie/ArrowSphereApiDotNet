@@ -9,5 +9,8 @@ namespace ArrowSphereApiDotNet.Models.Customers
     public record ListCustomersData(
         IEnumerable<Customer> Customers)
     {
+        public ListCustomersData() : this(new List<Customer>())
+        {
+        }
     }
 }

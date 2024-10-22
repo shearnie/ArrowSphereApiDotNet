@@ -11,5 +11,8 @@ namespace ArrowSphereApiDotNet.Models.Licenses
         SaleConstraints SaleConstraints,
         IEnumerable<Attribute> Attributes)
     {
+        public PriceBand() : this(new Billing(), new SaleConstraints(), new List<Attribute>())
+        {
+        }
     }
 }

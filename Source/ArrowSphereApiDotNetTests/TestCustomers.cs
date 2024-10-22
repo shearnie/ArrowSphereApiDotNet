@@ -1,19 +1,20 @@
 using ArrowSphereApiDotNet;
 using ArrowSphereApiDotNet.Models.Customers;
 using Microsoft.Extensions.DependencyInjection;
+using System;
 
 namespace ArrowSphereApiDotNetTests
 {
 	public class TestCustomers
     {
 		private ServiceProvider _services;
-		private ArrowClient _client;
+		private IArrowClient _client;
 		
 		[SetUp]
 		public async Task SetUp()
         {
             _services = Helpers.SetUpServiceProvider();
-            _client = _services.GetService<ArrowClient>();
+            _client = _services.GetService<IArrowClient>();
         }
 
 		[TearDown]
@@ -50,7 +51,6 @@ namespace ArrowSphereApiDotNetTests
             Assert.That(rs.Data.Customers.First().CompanyName, Is.EqualTo(name));
         }
 
-        [Ignore("Do this manually.")]
         [Test]
         public async Task CreateCustomer()
         {
@@ -81,14 +81,31 @@ namespace ArrowSphereApiDotNetTests
             Assert.That(rs.Data.Customers.First().Reference, Is.EqualTo(create.Data.Reference));
         }
 
-        [Ignore("Do this manually.")]
         [Test]
         public async Task UpdateCustomer()
         {
             var client = _client.GetCustomersClient();
 
+            var create = await client.CreateCustomer(new CreateCustomerRequest()
+            {
+                CompanyName = "Test",
+                AddressLine1 = "Anne Street",
+                Zip = "4000",
+                City = "Brisbane",
+                CountryCode = "AU",
+                ReceptionPhone = "+61 123456",
+                Contact = new Contact()
+                {
+                    FirstName = "J",
+                    LastName = "Doe",
+                    Email = "test@email.com",
+                    Phone = "+61 1234567",
+                    Type = "Primary",
+                },
+            });
             var update = await client.UpdateCustomer(new UpdateCustomerRequest()
             {
+                Reference = create.Data.Reference,
                 CompanyName = "Test Changed",
                 AddressLine1 = "Anne Street",
                 Zip = "4000",

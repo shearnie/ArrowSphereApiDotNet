@@ -1,18 +1,19 @@
 using ArrowSphereApiDotNet;
 using Microsoft.Extensions.DependencyInjection;
+using System;
 
 namespace ArrowSphereApiDotNetTests
 {
 	public class TestPartners
     {
 		private ServiceProvider _services;
-		private ArrowClient _client;
+		private IArrowClient _client;
 		
 		[SetUp]
 		public async Task SetUp()
         {
             _services = Helpers.SetUpServiceProvider();
-            _client = _services.GetService<ArrowClient>();
+            _client = _services.GetService<IArrowClient>();
         }
 
 		[TearDown]

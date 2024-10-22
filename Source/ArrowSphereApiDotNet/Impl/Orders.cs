@@ -1,21 +1,17 @@
 ﻿using ArrowSphereApiDotNet.Models.Orders;
 using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ArrowSphereApiDotNet
+namespace ArrowSphereApiDotNet.Impl
 {
-    public class Orders
-	{
-		private readonly ArrowClient _client;
+    public class Orders : IOrders
+    {
+        private readonly ArrowClient _client;
 
-		public Orders(ArrowClient arrowClient)
-		{
-			_client = arrowClient;
-		}
+        public Orders(ArrowClient arrowClient)
+        {
+            _client = arrowClient;
+        }
 
         public async Task<ListOrders> ListOrders()
         {

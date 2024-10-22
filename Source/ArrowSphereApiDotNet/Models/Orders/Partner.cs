@@ -10,5 +10,8 @@ namespace ArrowSphereApiDotNet.Models.Orders
         string CompanyName,
         PartnerContact Contact)
     {
+        public Partner() : this(string.Empty, new PartnerContact())
+        {
+        }
     }
 }

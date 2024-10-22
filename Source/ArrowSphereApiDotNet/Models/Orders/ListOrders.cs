@@ -11,5 +11,8 @@ namespace ArrowSphereApiDotNet.Models.Orders
         ListOrdersDetails Data,
         Pagination Pagination)
     {
+        public ListOrders() : this(default, new ListOrdersDetails(), new Pagination())
+        {
+        }
     }
 }

@@ -10,5 +10,8 @@ namespace ArrowSphereApiDotNet.Models.Licenses
         string Reference,
         string Link)
     {
+        public Order() : this(string.Empty, string.Empty)
+        {
+        }
     }
 }

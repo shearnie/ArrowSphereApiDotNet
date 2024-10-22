@@ -9,5 +9,8 @@ namespace ArrowSphereApiDotNet.Models.Orders
     public record Identifier(
         Vendor Vendor)
     {
+        public Identifier() : this(new Vendor())
+        {
+        }
     }
 }

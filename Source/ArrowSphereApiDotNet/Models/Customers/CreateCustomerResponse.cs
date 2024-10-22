@@ -10,5 +10,8 @@ namespace ArrowSphereApiDotNet.Models.Customers
         int Status,
         CreateCustomerResponseData Data)
     {
+        public CreateCustomerResponse() : this(default, new CreateCustomerResponseData())
+        {
+        }
     }
 }

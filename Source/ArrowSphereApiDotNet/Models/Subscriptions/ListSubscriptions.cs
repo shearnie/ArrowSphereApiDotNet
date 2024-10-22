@@ -10,5 +10,8 @@ namespace ArrowSphereApiDotNet.Models.Subscriptions
         int Status,
         IEnumerable<SubscriptionData> Data)
     {
+        public ListSubscriptions() : this(default, new List<SubscriptionData>())
+        {
+        }
     }
 }

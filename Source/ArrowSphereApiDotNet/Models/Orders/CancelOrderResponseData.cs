@@ -9,5 +9,8 @@ namespace ArrowSphereApiDotNet.Models.Orders
     public record CancelOrderResponseData(
         string Message)
     {
-	}
+        public CancelOrderResponseData() : this(string.Empty)
+        {
+        }
+    }
 }

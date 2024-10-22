@@ -1,0 +1,62 @@
+﻿{
+  "Status": 200,
+  "Data": [
+    {
+      "Reference": "XSPS11111",
+      "Name": "MSCSP",
+      "Status": "Validated",
+      "DateDemand": "2022-04-08T20:56:38Z",
+      "DateValidation": "2020-03-16T17:32:53.000Z",
+      "DateEnd": "2025-03-16T17:32:53Z",
+      "Level": null,
+      "Details": {
+        "Sales_Guid": "",
+        "Admin_Guid": "",
+        "HelpDesk_Guid": "",
+        "MpnId": "1234567",
+        "TenantId": "",
+        "IaasDiscountRate": 0.0,
+        "IaasDiscountRateUnit": ""
+      },
+      "ExtraInformation": { "ValueKind": 1 }
+    },
+    {
+      "Reference": "XSPS22222",
+      "Name": "CSPP",
+      "Status": "Validated",
+      "DateDemand": "2020-07-24T18:02:08Z",
+      "DateValidation": "2021-03-30T15:18:17.000Z",
+      "DateEnd": "2025-03-30T15:18:17Z",
+      "Level": null,
+      "Details": {
+        "Sales_Guid": "",
+        "Admin_Guid": "",
+        "HelpDesk_Guid": "",
+        "MpnId": "",
+        "TenantId": "",
+        "IaasDiscountRate": 0.0,
+        "IaasDiscountRateUnit": ""
+      },
+      "ExtraInformation": { "ValueKind": 1 }
+    },
+    {
+      "Reference": "XSPS33333",
+      "Name": "ARWS-MSS",
+      "Status": "Validated",
+      "DateDemand": "2020-09-09T20:41:09Z",
+      "DateValidation": "2020-09-09T20:42:25.000Z",
+      "DateEnd": "2024-11-09T20:42:25Z",
+      "Level": null,
+      "Details": {
+        "Sales_Guid": "",
+        "Admin_Guid": "",
+        "HelpDesk_Guid": "",
+        "MpnId": "",
+        "TenantId": "",
+        "IaasDiscountRate": 0.0,
+        "IaasDiscountRateUnit": ""
+      },
+      "ExtraInformation": { "ValueKind": 1 }
+    }
+  ]
+}

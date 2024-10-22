@@ -12,8 +12,11 @@ namespace ArrowSphereApiDotNet.Models.Subscriptions
         string HelpDesk_Guid,
         string MpnId,
         string TenantId,
-        int IaasDiscountRate,
+        decimal IaasDiscountRate,
         string IaasDiscountRateUnit)
     {
-	}
+        public SubscriptionDetail() : this(string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, default, string.Empty)
+        {
+        }
+    }
 }

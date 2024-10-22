@@ -1,0 +1,136 @@
+﻿{
+  "Status": 200,
+  "Data": {
+    "Customers": [
+      {
+        "Reference": "XSP222222",
+        "WorkgroupCode": "",
+        "CompanyName": "Arrow Demo",
+        "CompanyAcronym": "",
+        "AddressLine1": "1244 Demo Rd",
+        "AddressLine2": "",
+        "Zip": "80112",
+        "City": "Centennial",
+        "CountryCode": "US",
+        "State": "CO",
+        "ReceptionPhone": "1234567890",
+        "WebsiteUrl": "",
+        "EmailContact": "demo@arrow.com",
+        "Headcount": 0,
+        "TaxNumber": "",
+        "Ref": "222222",
+        "RegistrationNumber": "",
+        "BillingId": "1012662|100123456",
+        "BillingAddress1": "",
+        "BillingAddress2": "",
+        "BillingCity": "",
+        "BillingState": "",
+        "BillingZipCode": "",
+        "BillingCountryCode": "",
+        "InternalReference": "",
+        "Type": "MSP",
+        "Contact": {
+          "FirstName": "Wayne",
+          "LastName": "Test",
+          "Email": "test@org.org",
+          "Phone": "3031234321",
+          "SyncPartnerContactRefId": 184411,
+          "Type": ""
+        },
+        "OrganizationUnit": {
+          "OrganizationUnitRef": "XSPOU1888",
+          "Name": "test environment"
+        },
+        "Reseller": {
+          "Ref": "",
+          "CompanyName": ""
+        },
+        "Details": {
+          "Migration": false,
+          "DomainName": "XSP222222.onmicrosoft.com",
+          "OracleOnlineKey": "",
+          "IBMCeId": "United States",
+          "Maas360ResellerId": "Braden",
+          "TenantId": "6f94f13e-57a2-44a5-bc63-b943e7cdb735",
+          "IbmCustomerNumber": "4257331",
+          "IbmMaasAccountId": ""
+        },
+        "ExtraInformation": { "Programs": {} },
+        "CreatedAt": "2020-02-27T18:11:28Z",
+        "DeletedAt": null,
+        "PoNumberMandatory": false,
+        "PartnerTags": [],
+        "AdminNote": "",
+        "Isr": "",
+        "Fsr": ""
+      },
+      {
+        "Reference": "XSP111111",
+        "WorkgroupCode": "",
+        "CompanyName": "Big Bank",
+        "CompanyAcronym": "",
+        "AddressLine1": "1244 Demo Rd",
+        "AddressLine2": "",
+        "Zip": "80112",
+        "City": "Centennial",
+        "CountryCode": "US",
+        "State": "CO",
+        "ReceptionPhone": "1234567890",
+        "WebsiteUrl": "",
+        "EmailContact": "test@arrow.com",
+        "Headcount": 0,
+        "TaxNumber": "",
+        "Ref": "111111",
+        "RegistrationNumber": "",
+        "BillingId": "",
+        "BillingAddress1": "1244 Demo Rd",
+        "BillingAddress2": "",
+        "BillingCity": "Centennial",
+        "BillingState": "CO",
+        "BillingZipCode": "",
+        "BillingCountryCode": "",
+        "InternalReference": "",
+        "Type": "UKW",
+        "Contact": {
+          "FirstName": "Jack",
+          "LastName": "Test",
+          "Email": "test@org.org",
+          "Phone": "303-123-4567",
+          "SyncPartnerContactRefId": 1002333,
+          "Type": ""
+        },
+        "OrganizationUnit": null,
+        "Reseller": {
+          "Ref": "XSP222222",
+          "CompanyName": "Arrow Demo"
+        },
+        "Details": {
+          "Migration": false,
+          "DomainName": "USPMDemo.onmicrosoft.com",
+          "OracleOnlineKey": "",
+          "IBMCeId": "",
+          "Maas360ResellerId": "",
+          "TenantId": "8a735b2f-ddea-4907-8c57-4179cc9dbe6d",
+          "IbmCustomerNumber": "",
+          "IbmMaasAccountId": ""
+        },
+        "ExtraInformation": { "Programs": {} },
+        "CreatedAt": "2020-03-30T21:06:16Z",
+        "DeletedAt": null,
+        "PoNumberMandatory": false,
+        "PartnerTags": [],
+        "AdminNote": "",
+        "Isr": "",
+        "Fsr": ""
+      }
+    ]
+  },
+  "Pagination": {
+    "Per_Page": 999999,
+    "Current_Page": 1,
+    "Total_Page": 1,
+    "Total": 2,
+    "Next": null,
+    "Previous": null
+  }
+}

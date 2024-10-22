@@ -10,5 +10,8 @@ namespace ArrowSphereApiDotNet.Models.Customers
         string Ref,
         string CompanyName)
     {
+        public Reseller() : this(string.Empty, string.Empty)
+        {
+        }
     }
 }

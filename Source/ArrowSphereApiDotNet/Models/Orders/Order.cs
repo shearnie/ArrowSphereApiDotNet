@@ -10,16 +10,19 @@ namespace ArrowSphereApiDotNet.Models.Orders
         string Order_Reference,
         string Reference,
         string Status,
-        string DateStatus,
-        string DateCreation,
+        string? DateStatus,
+        string? DateCreation,
         string PoNumber,
         Partner Partner,
         Customer Customer,
         IEnumerable<Product> Products,
-        ExtraInformation ExtraInformation,
         string CreatedBy,
         string CreatedByImpersonator,
         decimal CommitmentAmountTotal)
     {
+        public Order() : this(string.Empty, string.Empty, string.Empty, null, null, string.Empty, new Partner(), new Customer(), new List<Product>(),
+                              string.Empty, string.Empty, default)
+        {
+        }
     }
 }

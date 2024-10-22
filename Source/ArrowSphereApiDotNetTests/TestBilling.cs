@@ -1,24 +1,21 @@
 ﻿using ArrowSphereApiDotNet;
 using ArrowSphereApiDotNet.Models.Billing;
 using Microsoft.Extensions.DependencyInjection;
+using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ArrowSphereApiDotNetTests
 {
     public class TestBilling
     {
         private ServiceProvider _services;
-        private ArrowClient _client;
+        private IArrowClient _client;
 
         [SetUp]
         public async Task SetUp()
         {
             _services = Helpers.SetUpServiceProvider();
-            _client = _services.GetService<ArrowClient>();
+            _client = _services.GetService<IArrowClient>();
         }
 
         [TearDown]
@@ -46,7 +43,13 @@ namespace ArrowSphereApiDotNetTests
                 }
             });
 
+            var json = JsonConvert.SerializeObject(rs);
+
+            Assert.That(rs.Code, Is.EqualTo(200));
             Assert.That(rs.Data.Headers.Any(), Is.True);
+            Assert.That(rs.Data.Values.Any(), Is.True);
+            Assert.That(rs.Data.Values.First().Count(), Is.EqualTo(rs.Data.Headers.Count()));
+            Assert.That(rs.Data.Values.First().First(), Is.Not.EqualTo(string.Empty));
         }
     }
 }

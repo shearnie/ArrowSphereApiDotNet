@@ -1,0 +1,29 @@
+﻿{
+  "Status": 200,
+  "Data": {
+    "CompanyName": "Arrow Demo",
+    "AddressLine1": "1244 Demo Rd",
+    "AddressLine2": "",
+    "Zip": "80112",
+    "City": "Centennial",
+    "CountryCode": "US",
+    "State": "CO",
+    "ReceptionPhone": "1234567890",
+    "WebsiteUrl": "",
+    "EmailContact": "test@org.org",
+    "HeadCount": 0,
+    "TaxNumber": "",
+    "Reference": "XSP222222",
+    "Ref": "222222",
+    "BillingId": "1012662|100123456",
+    "InternalReference": "",
+    "User": {
+      "Login": "0f6ba3c12e87482b94490a7a765bb5f0",
+      "FirstName": "Selena",
+      "LastName": "Test",
+      "Email": "test@org.org",
+      "Role": "MSP Plus",
+      "Code": "ext_msp_p"
+    }
+  }
+}

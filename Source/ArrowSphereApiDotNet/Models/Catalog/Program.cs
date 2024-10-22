@@ -8,6 +8,9 @@ namespace ArrowSphereApiDotNet.Models.Catalog
 {
 	public record Program(
 		bool IsEnabled)
-	{
-	}
+    {
+        public Program() : this(false)
+        {
+        }
+    }
 }

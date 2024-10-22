@@ -12,5 +12,8 @@ namespace ArrowSphereApiDotNet.Models.Billing
         int Total,
         int TotalPages)
     {
+        public Pagination() : this(default, default, default, default)
+        {
+        }
     }
 }

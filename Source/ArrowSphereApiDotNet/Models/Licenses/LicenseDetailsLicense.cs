@@ -50,5 +50,12 @@ namespace ArrowSphereApiDotNet.Models.Licenses
         IEnumerable<Relation> Relation,
         IEnumerable<Warning> Warnings)
     {
+        public LicenseDetailsLicense() : this(default, new ActiveSeats(), new List<string>(), string.Empty, false, string.Empty, string.Empty, default, string.Empty, false, false,
+                                              string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, new Order(), string.Empty, default, new Price(), new PriceBand(),
+                                              string.Empty, new Rates(), default, string.Empty, string.Empty, string.Empty, default, string.Empty, default, string.Empty, string.Empty,
+                                              string.Empty, string.Empty, new Assets(), string.Empty, new List<Config>(), string.Empty, default, string.Empty, new List<Relation>(),
+                                              new List<Warning>())
+        {
+        }
     }
 }

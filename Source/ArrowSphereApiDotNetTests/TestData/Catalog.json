@@ -1,0 +1,729 @@
+﻿{
+  "Products": [
+    {
+      "Id": "971e949ca688ea552b453126b855f8dd",
+      "MarketPlace": "US",
+      "Sku": "CFQ7TTC0LDPB:0001",
+      "Name": "Microsoft 365 Business Standard",
+      "Type": "SAAS",
+      "Vendor": "Microsoft",
+      "Vendor_Code": "microsoft",
+      "Category": [],
+      "Arrow_Sub_Categories": [ "nce" ],
+      "Customer_Category": "Corporate",
+      "Service_Ref": "MICROSOFT-365-BUSINESS",
+      "Service_Name": "Microsoft 365 Business (NCE)",
+      "Keywords": [],
+      "Is_Addon": false,
+      "Has_Addons": true,
+      "Is_Trial": false,
+      "Thumbnail": "https://websource.myportal.cloud/images/icon/Microsoft.png",
+      "Square_Logo": "https://websource.myportal.cloud/images/icon/Microsoft.png",
+      "Prices": [
+        {
+          "Min_Quantity": 1.0,
+          "Max_Quantity": 300.0,
+          "Recurring_Buy_Price": 12.6,
+          "Recurring_Sell_Price": 15.0,
+          "Term": "Month-to-Month",
+          "Unit_Type": "LICENSE",
+          "Recurring_Time_Unit": "per Month",
+          "Currency": "USD",
+          "Period_As_Hours": 720,
+          "Term_As_Hours": 720
+        },
+        {
+          "Min_Quantity": 1.0,
+          "Max_Quantity": 300.0,
+          "Recurring_Buy_Price": 10.5,
+          "Recurring_Sell_Price": 12.5,
+          "Term": "1 Year",
+          "Unit_Type": "LICENSE",
+          "Recurring_Time_Unit": "per Month",
+          "Currency": "USD",
+          "Period_As_Hours": 720,
+          "Term_As_Hours": 8640
+        },
+        {
+          "Min_Quantity": 1.0,
+          "Max_Quantity": 300.0,
+          "Recurring_Buy_Price": 126.0,
+          "Recurring_Sell_Price": 150.0,
+          "Term": "1 Year",
+          "Unit_Type": "LICENSE",
+          "Recurring_Time_Unit": "per Year",
+          "Currency": "USD",
+          "Period_As_Hours": 8640,
+          "Term_As_Hours": 8640
+        }
+      ],
+      "MarketSegments": [ "Corporate" ],
+      "Weight_Top_Sales": 10.556242274412856,
+      "Weight_Forced": 100,
+      "IsEnabled": true,
+      "Program": { "IsEnabled": true },
+      "Prerequisites": [],
+      "Add_Ons": [ "CFQ7TTC0HDJW:0001", "CFQ7TTC0HDJW:000H", "CFQ7TTC0HDJX:0001", "CFQ7TTC0HDK0:0001", "CFQ7TTC0HDK0:000B", "CFQ7TTC0HDK2:0001", "CFQ7TTC0HDK2:000D", "CFQ7TTC0HL72:0001", "CFQ7TTC0HL73:0001", "CFQ7TTC0HL73:000M", "CFQ7TTC0JXCZ:0004", "CFQ7TTC0JXCZ:0009", "CFQ7TTC0JXCZ:000B", "CFQ7TTC0JXCZ:000H", "CFQ7TTC0LH03:0006", "CFQ7TTC0LH03:0007", "CFQ7TTC0LH03:0018", "CFQ7TTC0LH03:0019", "CFQ7TTC0LH04:0001", "CFQ7TTC0LH04:000V", "CFQ7TTC0LH0J:0001", "CFQ7TTC0LH0J:000M", "CFQ7TTC0LH0T:0001", "CFQ7TTC0LH0T:000R", "CFQ7TTC0LHS9:0001", "CFQ7TTC0LHS9:000G", "CFQ7TTC0LHSL:0001", "CFQ7TTC0LHSL:0008", "CFQ7TTC0LHSL:001G", "CFQ7TTC0LHSW:0001", "CFQ7TTC0LHSW:0009", "CFQ7TTC0LHWF:0001", "CFQ7TTC0LHWF:000J", "CFQ7TTC0LHWF:000K", "CFQ7TTC0LHXH:0001", "CFQ7TTC0LHXH:000P", "CFQ7TTC0MJ20:0002", "CFQ7TTC0MJ20:0003", "CFQ7TTC0MJ23:0001", "CFQ7TTC0MM8R:0002", "CFQ7TTC0N1T1:0006", "CFQ7TTC0N8SS:0009", "CFQ7TTC0NSWW:0001", "CFQ7TTC0NSX1:0001", "CFQ7TTC0PGMW:0001", "CFQ7TTC0R551:0001", "CFQ7TTC0R551:0002", "CFQ7TTC0R551:0007", "CFQ7TTC0R551:0008", "CFQ7TTC0R551:0009", "CFQ7TTC0R551:000C", "CFQ7TTC0R551:000D", "CFQ7TTC0R551:000F", "CFQ7TTC0S3X1:0004" ],
+      "Orderable_Sku": "U0FBU3x8bWljcm9zb2Z0fHxNSUNST1NPRlQtMzY1LUJVU0lORVNTfHxDRlE3VFRDMExEUEI6MDAwMQ=="
+    },
+    {
+      "Id": "5e9260234eee93a4a3dfacf3fd7d3e4e",
+      "MarketPlace": "US",
+      "Sku": "CFQ7TTC0LH18:0001",
+      "Name": "Microsoft 365 Business Basic",
+      "Type": "SAAS",
+      "Vendor": "Microsoft",
+      "Vendor_Code": "microsoft",
+      "Category": [ { "ValueKind": 3 } ],
+      "Arrow_Sub_Categories": [ "nce" ],
+      "Customer_Category": "Corporate",
+      "Service_Ref": "MICROSOFT-365-BUSINESS",
+      "Service_Name": "Microsoft 365 Business (NCE)",
+      "Keywords": [],
+      "Is_Addon": false,
+      "Has_Addons": true,
+      "Is_Trial": false,
+      "Thumbnail": "https://websource.myportal.cloud/images/icon/Microsoft.png",
+      "Square_Logo": "https://websource.myportal.cloud/images/icon/Microsoft.png",
+      "Prices": [
+        {
+          "Min_Quantity": 1.0,
+          "Max_Quantity": 300.0,
+          "Recurring_Buy_Price": 6.05,
+          "Recurring_Sell_Price": 7.2,
+          "Term": "Month-to-Month",
+          "Unit_Type": "LICENSE",
+          "Recurring_Time_Unit": "per Month",
+          "Currency": "USD",
+          "Period_As_Hours": 720,
+          "Term_As_Hours": 720
+        },
+        {
+          "Min_Quantity": 1.0,
+          "Max_Quantity": 300.0,
+          "Recurring_Buy_Price": 5.04,
+          "Recurring_Sell_Price": 6.0,
+          "Term": "1 Year",
+          "Unit_Type": "LICENSE",
+          "Recurring_Time_Unit": "per Month",
+          "Currency": "USD",
+          "Period_As_Hours": 720,
+          "Term_As_Hours": 8640
+        },
+        {
+          "Min_Quantity": 1.0,
+          "Max_Quantity": 300.0,
+          "Recurring_Buy_Price": 60.48,
+          "Recurring_Sell_Price": 72.0,
+          "Term": "1 Year",
+          "Unit_Type": "LICENSE",
+          "Recurring_Time_Unit": "per Year",
+          "Currency": "USD",
+          "Period_As_Hours": 8640,
+          "Term_As_Hours": 8640
+        }
+      ],
+      "MarketSegments": [ "Corporate" ],
+      "Weight_Top_Sales": 6.909090909090909,
+      "Weight_Forced": 100,
+      "IsEnabled": true,
+      "Program": { "IsEnabled": true },
+      "Prerequisites": [],
+      "Add_Ons": [ "CFQ7TTC0HDJW:0001", "CFQ7TTC0HDJW:000H", "CFQ7TTC0HDJX:0001", "CFQ7TTC0HDK0:0001", "CFQ7TTC0HDK0:000B", "CFQ7TTC0HDK2:0001", "CFQ7TTC0HDK2:000D", "CFQ7TTC0HL72:0001", "CFQ7TTC0HL73:0001", "CFQ7TTC0HL73:000M", "CFQ7TTC0JXCZ:0004", "CFQ7TTC0JXCZ:0009", "CFQ7TTC0JXCZ:000B", "CFQ7TTC0JXCZ:000H", "CFQ7TTC0LH03:0006", "CFQ7TTC0LH03:0007", "CFQ7TTC0LH03:0018", "CFQ7TTC0LH03:0019", "CFQ7TTC0LH04:0001", "CFQ7TTC0LH04:000V", "CFQ7TTC0LH0J:0001", "CFQ7TTC0LH0J:000M", "CFQ7TTC0LH0T:0001", "CFQ7TTC0LH0T:000R", "CFQ7TTC0LHS9:0001", "CFQ7TTC0LHS9:000G", "CFQ7TTC0LHSL:0001", "CFQ7TTC0LHSL:0008", "CFQ7TTC0LHSL:001G", "CFQ7TTC0LHSW:0001", "CFQ7TTC0LHSW:0009", "CFQ7TTC0LHWF:0001", "CFQ7TTC0LHWF:000J", "CFQ7TTC0LHWF:000K", "CFQ7TTC0LHXH:0001", "CFQ7TTC0LHXH:000P", "CFQ7TTC0MJ20:0002", "CFQ7TTC0MJ20:0003", "CFQ7TTC0MJ23:0001", "CFQ7TTC0MM8R:0002", "CFQ7TTC0N1T1:0006", "CFQ7TTC0NSWW:0001", "CFQ7TTC0NSX1:0001", "CFQ7TTC0PGMW:0001", "CFQ7TTC0R551:0001", "CFQ7TTC0R551:0002", "CFQ7TTC0R551:0007", "CFQ7TTC0R551:0008", "CFQ7TTC0R551:0009", "CFQ7TTC0R551:000C", "CFQ7TTC0R551:000D", "CFQ7TTC0R551:000F" ],
+      "Orderable_Sku": "U0FBU3x8bWljcm9zb2Z0fHxNSUNST1NPRlQtMzY1LUJVU0lORVNTfHxDRlE3VFRDMExIMTg6MDAwMQ=="
+    },
+    {
+      "Id": "33d9c327fea2b1d5e0f33689f6454687",
+      "MarketPlace": "US",
+      "Sku": "CFQ7TTC0LCHC:0002",
+      "Name": "Microsoft 365 Business Premium",
+      "Type": "SAAS",
+      "Vendor": "Microsoft",
+      "Vendor_Code": "microsoft",
+      "Category": [ { "ValueKind": 3 } ],
+      "Arrow_Sub_Categories": [ "nce" ],
+      "Customer_Category": "Corporate",
+      "Service_Ref": "MICROSOFT-365-BUSINESS",
+      "Service_Name": "Microsoft 365 Business (NCE)",
+      "Keywords": [],
+      "Is_Addon": false,
+      "Has_Addons": true,
+      "Is_Trial": false,
+      "Thumbnail": "https://websource.myportal.cloud/images/icon/Microsoft.png",
+      "Square_Logo": "https://websource.myportal.cloud/images/icon/Microsoft.png",
+      "Prices": [
+        {
+          "Min_Quantity": 1.0,
+          "Max_Quantity": 300.0,
+          "Recurring_Buy_Price": 22.18,
+          "Recurring_Sell_Price": 26.4,
+          "Term": "Month-to-Month",
+          "Unit_Type": "LICENSE",
+          "Recurring_Time_Unit": "per Month",
+          "Currency": "USD",
+          "Period_As_Hours": 720,
+          "Term_As_Hours": 720
+        },
+        {
+          "Min_Quantity": 1.0,
+          "Max_Quantity": 300.0,
+          "Recurring_Buy_Price": 18.48,
+          "Recurring_Sell_Price": 22.0,
+          "Term": "1 Year",
+          "Unit_Type": "LICENSE",
+          "Recurring_Time_Unit": "per Month",
+          "Currency": "USD",
+          "Period_As_Hours": 720,
+          "Term_As_Hours": 8640
+        },
+        {
+          "Min_Quantity": 1.0,
+          "Max_Quantity": 300.0,
+          "Recurring_Buy_Price": 221.76,
+          "Recurring_Sell_Price": 264.0,
+          "Term": "1 Year",
+          "Unit_Type": "LICENSE",
+          "Recurring_Time_Unit": "per Year",
+          "Currency": "USD",
+          "Period_As_Hours": 8640,
+          "Term_As_Hours": 8640
+        }
+      ],
+      "MarketSegments": [ "Corporate" ],
+      "Weight_Top_Sales": 6.872682323856613,
+      "Weight_Forced": 0,
+      "IsEnabled": true,
+      "Program": { "IsEnabled": true },
+      "Prerequisites": [],
+      "Add_Ons": [ "CFQ7TTC0HDJW:0001", "CFQ7TTC0HDJW:000H", "CFQ7TTC0HDJX:0001", "CFQ7TTC0HDK0:0001", "CFQ7TTC0HDK0:000B", "CFQ7TTC0HDK2:0001", "CFQ7TTC0HDK2:000D", "CFQ7TTC0HL72:0001", "CFQ7TTC0HL73:0001", "CFQ7TTC0HL73:000M", "CFQ7TTC0HL82:0001", "CFQ7TTC0HL82:0006", "CFQ7TTC0HL82:000G", "CFQ7TTC0HL82:000H", "CFQ7TTC0HL82:000K", "CFQ7TTC0JXCZ:0004", "CFQ7TTC0JXCZ:0009", "CFQ7TTC0JXCZ:000B", "CFQ7TTC0JXCZ:000H", "CFQ7TTC0LH03:0006", "CFQ7TTC0LH03:0007", "CFQ7TTC0LH03:0018", "CFQ7TTC0LH03:0019", "CFQ7TTC0LH04:0001", "CFQ7TTC0LH04:000V", "CFQ7TTC0LH0C:0001", "CFQ7TTC0LH0C:0007", "CFQ7TTC0LH0J:0001", "CFQ7TTC0LH0J:000M", "CFQ7TTC0LH0T:0001", "CFQ7TTC0LH0T:000R", "CFQ7TTC0LHPG:0001", "CFQ7TTC0LHPG:000G", "CFQ7TTC0LHS9:0001", "CFQ7TTC0LHS9:000G", "CFQ7TTC0LHSL:0001", "CFQ7TTC0LHSL:0008", "CFQ7TTC0LHSL:001G", "CFQ7TTC0LHWF:0001", "CFQ7TTC0LHWF:000J", "CFQ7TTC0LHWF:000K", "CFQ7TTC0LHXH:0001", "CFQ7TTC0LHXH:000P", "CFQ7TTC0MJ20:0002", "CFQ7TTC0MJ20:0003", "CFQ7TTC0MJ23:0001", "CFQ7TTC0MM8R:0002", "CFQ7TTC0N1T1:0006", "CFQ7TTC0N8SS:0009", "CFQ7TTC0NSWW:0001", "CFQ7TTC0NSX1:0001", "CFQ7TTC0PGMW:0001", "CFQ7TTC0QKW2:0005", "CFQ7TTC0QKW2:0006", "CFQ7TTC0QKW2:0007", "CFQ7TTC0R551:0001", "CFQ7TTC0R551:0002", "CFQ7TTC0R551:0007", "CFQ7TTC0R551:0009", "CFQ7TTC0R551:000C", "CFQ7TTC0R551:000D", "CFQ7TTC0R551:000F", "CFQ7TTC0S3X1:0004" ],
+      "Orderable_Sku": "U0FBU3x8bWljcm9zb2Z0fHxNSUNST1NPRlQtMzY1LUJVU0lORVNTfHxDRlE3VFRDMExDSEM6MDAwMg=="
+    },
+    {
+      "Id": "d95687a9141620fe01125506edef5aad",
+      "MarketPlace": "US",
+      "Sku": "CFQ7TTC0LH16:0001",
+      "Name": "Exchange Online (Plan 1)",
+      "Type": "SAAS",
+      "Vendor": "Microsoft",
+      "Vendor_Code": "microsoft",
+      "Category": [ { "ValueKind": 3 } ],
+      "Arrow_Sub_Categories": [ "nce" ],
+      "Customer_Category": "Corporate",
+      "Service_Ref": "EXCHANGE-ONLINE",
+      "Service_Name": "Exchange Online (NCE)",
+      "Keywords": [],
+      "Is_Addon": false,
+      "Has_Addons": true,
+      "Is_Trial": false,
+      "Thumbnail": "https://websource.myportal.cloud/images/icon/Exchange_Server.png",
+      "Square_Logo": "https://websource.myportal.cloud/images/icon/Exchange_Server.png",
+      "Prices": [
+        {
+          "Min_Quantity": 1.0,
+          "Max_Quantity": 10000000.0,
+          "Recurring_Buy_Price": 4.03,
+          "Recurring_Sell_Price": 4.8,
+          "Term": "Month-to-Month",
+          "Unit_Type": "LICENSE",
+          "Recurring_Time_Unit": "per Month",
+          "Currency": "USD",
+          "Period_As_Hours": 720,
+          "Term_As_Hours": 720
+        },
+        {
+          "Min_Quantity": 1.0,
+          "Max_Quantity": 10000000.0,
+          "Recurring_Buy_Price": 3.36,
+          "Recurring_Sell_Price": 4.0,
+          "Term": "1 Year",
+          "Unit_Type": "LICENSE",
+          "Recurring_Time_Unit": "per Month",
+          "Currency": "USD",
+          "Period_As_Hours": 720,
+          "Term_As_Hours": 8640
+        },
+        {
+          "Min_Quantity": 1.0,
+          "Max_Quantity": 10000000.0,
+          "Recurring_Buy_Price": 40.32,
+          "Recurring_Sell_Price": 48.0,
+          "Term": "1 Year",
+          "Unit_Type": "LICENSE",
+          "Recurring_Time_Unit": "per Year",
+          "Currency": "USD",
+          "Period_As_Hours": 8640,
+          "Term_As_Hours": 8640
+        }
+      ],
+      "MarketSegments": [ "Corporate" ],
+      "Weight_Top_Sales": 6.501854140914709,
+      "Weight_Forced": 0,
+      "IsEnabled": true,
+      "Program": { "IsEnabled": true },
+      "Prerequisites": [],
+      "Add_Ons": [ "CFQ7TTC0HL72:0001", "CFQ7TTC0LH04:0001", "CFQ7TTC0LH04:000V", "CFQ7TTC0LH0J:0001", "CFQ7TTC0LH0J:000M", "CFQ7TTC0LHQG:0001", "CFQ7TTC0LHQG:0002", "CFQ7TTC0LHSW:0001", "CFQ7TTC0LHSW:0009", "CFQ7TTC0LHSZ:000G", "CFQ7TTC0LHWF:0001", "CFQ7TTC0LHWF:000J", "CFQ7TTC0LHWF:000K", "CFQ7TTC0LHXH:0001", "CFQ7TTC0LHXH:000P", "CFQ7TTC0MM8R:0002", "CFQ7TTC0N1T1:0006", "CFQ7TTC0NSWW:0001", "CFQ7TTC0NSX1:0001" ],
+      "Orderable_Sku": "U0FBU3x8bWljcm9zb2Z0fHxFWENIQU5HRS1PTkxJTkV8fENGUTdUVEMwTEgxNjowMDAx"
+    },
+    {
+      "Id": "f8221f7e0aba73590f9f62bd29cfe66c",
+      "MarketPlace": "US",
+      "Sku": "CFQ7TTC0LH1P:0001",
+      "Name": "Exchange Online (Plan 2)",
+      "Type": "SAAS",
+      "Vendor": "Microsoft",
+      "Vendor_Code": "microsoft",
+      "Category": [ { "ValueKind": 3 } ],
+      "Arrow_Sub_Categories": [ "nce" ],
+      "Customer_Category": "Corporate",
+      "Service_Ref": "EXCHANGE-ONLINE",
+      "Service_Name": "Exchange Online (NCE)",
+      "Keywords": [],
+      "Is_Addon": false,
+      "Has_Addons": true,
+      "Is_Trial": false,
+      "Thumbnail": "https://websource.myportal.cloud/images/icon/Exchange_Server.png",
+      "Square_Logo": "https://websource.myportal.cloud/images/icon/Exchange_Server.png",
+      "Prices": [
+        {
+          "Min_Quantity": 1.0,
+          "Max_Quantity": 10000000.0,
+          "Recurring_Buy_Price": 8.06,
+          "Recurring_Sell_Price": 9.6,
+          "Term": "Month-to-Month",
+          "Unit_Type": "LICENSE",
+          "Recurring_Time_Unit": "per Month",
+          "Currency": "USD",
+          "Period_As_Hours": 720,
+          "Term_As_Hours": 720
+        },
+        {
+          "Min_Quantity": 1.0,
+          "Max_Quantity": 10000000.0,
+          "Recurring_Buy_Price": 6.72,
+          "Recurring_Sell_Price": 8.0,
+          "Term": "1 Year",
+          "Unit_Type": "LICENSE",
+          "Recurring_Time_Unit": "per Month",
+          "Currency": "USD",
+          "Period_As_Hours": 720,
+          "Term_As_Hours": 8640
+        },
+        {
+          "Min_Quantity": 1.0,
+          "Max_Quantity": 10000000.0,
+          "Recurring_Buy_Price": 80.64,
+          "Recurring_Sell_Price": 96.0,
+          "Term": "1 Year",
+          "Unit_Type": "LICENSE",
+          "Recurring_Time_Unit": "per Year",
+          "Currency": "USD",
+          "Period_As_Hours": 8640,
+          "Term_As_Hours": 8640
+        }
+      ],
+      "MarketSegments": [ "Corporate" ],
+      "Weight_Top_Sales": 3.0407911001236094,
+      "Weight_Forced": 0,
+      "IsEnabled": true,
+      "Program": { "IsEnabled": true },
+      "Prerequisites": [],
+      "Add_Ons": [ "CFQ7TTC0HL72:0001", "CFQ7TTC0LH04:0001", "CFQ7TTC0LH04:000V", "CFQ7TTC0LHQG:0001", "CFQ7TTC0LHQG:0002", "CFQ7TTC0LHSZ:000G", "CFQ7TTC0LHWF:0001", "CFQ7TTC0LHWF:000J", "CFQ7TTC0LHWF:000K", "CFQ7TTC0LHXH:0001", "CFQ7TTC0LHXH:000P", "CFQ7TTC0MM8R:0002", "CFQ7TTC0N1T1:0006", "CFQ7TTC0NSWW:0001", "CFQ7TTC0NSX1:0001" ],
+      "Orderable_Sku": "U0FBU3x8bWljcm9zb2Z0fHxFWENIQU5HRS1PTkxJTkV8fENGUTdUVEMwTEgxUDowMDAx"
+    },
+    {
+      "Id": "69a7c8b6982d7bbc98097db822d00c7c",
+      "MarketPlace": "US",
+      "Sku": "CFQ7TTC0LH04:0001",
+      "Name": "Microsoft Defender for Office 365 (Plan 1)",
+      "Type": "SAAS",
+      "Vendor": "Microsoft",
+      "Vendor_Code": "microsoft",
+      "Category": [ { "ValueKind": 3 } ],
+      "Arrow_Sub_Categories": [ "nce" ],
+      "Customer_Category": "Corporate",
+      "Service_Ref": "MICROSOFT-DEFENDER",
+      "Service_Name": "Microsoft Defender (NCE)",
+      "Keywords": [],
+      "Is_Addon": true,
+      "Has_Addons": false,
+      "Is_Trial": false,
+      "Thumbnail": "https://websource.myportal.cloud/images/icon/Defender.png",
+      "Square_Logo": "https://websource.myportal.cloud/images/icon/Defender.png",
+      "Prices": [
+        {
+          "Min_Quantity": 1.0,
+          "Max_Quantity": 10000000.0,
+          "Recurring_Buy_Price": 2.02,
+          "Recurring_Sell_Price": 2.4,
+          "Term": "Month-to-Month",
+          "Unit_Type": "LICENSE",
+          "Recurring_Time_Unit": "per Month",
+          "Currency": "USD",
+          "Period_As_Hours": 720,
+          "Term_As_Hours": 720
+        },
+        {
+          "Min_Quantity": 1.0,
+          "Max_Quantity": 10000000.0,
+          "Recurring_Buy_Price": 1.68,
+          "Recurring_Sell_Price": 2.0,
+          "Term": "1 Year",
+          "Unit_Type": "LICENSE",
+          "Recurring_Time_Unit": "per Month",
+          "Currency": "USD",
+          "Period_As_Hours": 720,
+          "Term_As_Hours": 8640
+        },
+        {
+          "Min_Quantity": 1.0,
+          "Max_Quantity": 10000000.0,
+          "Recurring_Buy_Price": 20.16,
+          "Recurring_Sell_Price": 24.0,
+          "Term": "1 Year",
+          "Unit_Type": "LICENSE",
+          "Recurring_Time_Unit": "per Year",
+          "Currency": "USD",
+          "Period_As_Hours": 8640,
+          "Term_As_Hours": 8640
+        }
+      ],
+      "MarketSegments": [ "Corporate" ],
+      "Weight_Top_Sales": 2.991347342398022,
+      "Weight_Forced": 0,
+      "IsEnabled": true,
+      "Program": { "IsEnabled": true },
+      "Prerequisites": [
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 },
+        { "ValueKind": 3 }
+      ],
+      "Add_Ons": [],
+      "Orderable_Sku": "U0FBU3x8bWljcm9zb2Z0fHxNSUNST1NPRlQtREVGRU5ERVJ8fENGUTdUVEMwTEgwNDowMDAx"
+    },
+    {
+      "Id": "af4b585d2890dcd105485eabc6cc2bb3",
+      "MarketPlace": "US",
+      "Sku": "CFQ7TTC0LF8R:0001",
+      "Name": "Office 365 E3",
+      "Type": "SAAS",
+      "Vendor": "Microsoft",
+      "Vendor_Code": "microsoft",
+      "Category": [ { "ValueKind": 3 } ],
+      "Arrow_Sub_Categories": [ "nce" ],
+      "Customer_Category": "Corporate",
+      "Service_Ref": "OFFICE-365-E",
+      "Service_Name": "Office 365 E (NCE)",
+      "Keywords": [],
+      "Is_Addon": false,
+      "Has_Addons": true,
+      "Is_Trial": false,
+      "Thumbnail": "https://websource.myportal.cloud/images/icon/Office365.jpg",
+      "Square_Logo": "https://websource.myportal.cloud/images/icon/Office365.jpg",
+      "Prices": [
+        {
+          "Min_Quantity": 1.0,
+          "Max_Quantity": 10000000.0,
+          "Recurring_Buy_Price": 23.18,
+          "Recurring_Sell_Price": 27.6,
+          "Term": "Month-to-Month",
+          "Unit_Type": "LICENSE",
+          "Recurring_Time_Unit": "per Month",
+          "Currency": "USD",
+          "Period_As_Hours": 720,
+          "Term_As_Hours": 720
+        },
+        {
+          "Min_Quantity": 1.0,
+          "Max_Quantity": 10000000.0,
+          "Recurring_Buy_Price": 19.32,
+          "Recurring_Sell_Price": 23.0,
+          "Term": "1 Year",
+          "Unit_Type": "LICENSE",
+          "Recurring_Time_Unit": "per Month",
+          "Currency": "USD",
+          "Period_As_Hours": 720,
+          "Term_As_Hours": 8640
+        },
+        {
+          "Min_Quantity": 1.0,
+          "Max_Quantity": 10000000.0,
+          "Recurring_Buy_Price": 231.84,
+          "Recurring_Sell_Price": 276.0,
+          "Term": "1 Year",
+          "Unit_Type": "LICENSE",
+          "Recurring_Time_Unit": "per Year",
+          "Currency": "USD",
+          "Period_As_Hours": 8640,
+          "Term_As_Hours": 8640
+        }
+      ],
+      "MarketSegments": [ "Corporate" ],
+      "Weight_Top_Sales": 2.595797280593325,
+      "Weight_Forced": 0,
+      "IsEnabled": true,
+      "Program": { "IsEnabled": true },
+      "Prerequisites": [],
+      "Add_Ons": [ "CFQ7TTC0HDJW:0001", "CFQ7TTC0HDJW:000H", "CFQ7TTC0HDJX:0001", "CFQ7TTC0HDK0:0001", "CFQ7TTC0HDK0:000B", "CFQ7TTC0HDK2:0001", "CFQ7TTC0HDK2:000D", "CFQ7TTC0HL72:0001", "CFQ7TTC0HL73:0001", "CFQ7TTC0HL73:000M", "CFQ7TTC0HVZW:000D", "CFQ7TTC0HVZW:000H", "CFQ7TTC0HVZW:000J", "CFQ7TTC0HVZW:000K", "CFQ7TTC0HVZW:001F", "CFQ7TTC0JXCZ:0004", "CFQ7TTC0JXCZ:0009", "CFQ7TTC0JXCZ:000B", "CFQ7TTC0JXCZ:000H", "CFQ7TTC0LH03:0006", "CFQ7TTC0LH03:0007", "CFQ7TTC0LH03:0018", "CFQ7TTC0LH03:0019", "CFQ7TTC0LH04:0001", "CFQ7TTC0LH04:000V", "CFQ7TTC0LH0C:0001", "CFQ7TTC0LH0C:0007", "CFQ7TTC0LH0T:0001", "CFQ7TTC0LH0T:000R", "CFQ7TTC0LHPG:0001", "CFQ7TTC0LHPG:000G", "CFQ7TTC0LHQB:0001", "CFQ7TTC0LHQB:0007", "CFQ7TTC0LHQG:0001", "CFQ7TTC0LHQG:0002", "CFQ7TTC0LHR4:0001", "CFQ7TTC0LHR4:000Q", "CFQ7TTC0LHR5:0001", "CFQ7TTC0LHS9:0001", "CFQ7TTC0LHS9:000G", "CFQ7TTC0LHSL:0001", "CFQ7TTC0LHSL:0008", "CFQ7TTC0LHSL:001G", "CFQ7TTC0LHSZ:000G", "CFQ7TTC0LHWF:0001", "CFQ7TTC0LHWF:000J", "CFQ7TTC0LHWF:000K", "CFQ7TTC0LHXH:0001", "CFQ7TTC0LHXH:000P", "CFQ7TTC0LHZ0:0001", "CFQ7TTC0MM8R:0002", "CFQ7TTC0N1T1:0006", "CFQ7TTC0NSWW:0001", "CFQ7TTC0NSX1:0001", "CFQ7TTC0R551:0001", "CFQ7TTC0R551:0002", "CFQ7TTC0R551:0007", "CFQ7TTC0R551:0008", "CFQ7TTC0R551:0009", "CFQ7TTC0R551:000C", "CFQ7TTC0R551:000D", "CFQ7TTC0R551:000F", "CFQ7TTC0S3X1:0004" ],
+      "Orderable_Sku": "U0FBU3x8bWljcm9zb2Z0fHxPRkZJQ0UtMzY1LUV8fENGUTdUVEMwTEY4UjowMDAx"
+    },
+    {
+      "Id": "78576e263fcc2ef2b6ac78133b846010",
+      "MarketPlace": "US",
+      "Sku": "DZH318Z0BPS6:0001",
+      "Name": "Microsoft Azure Subscription (Azure Plan)",
+      "Type": "IAAS",
+      "Vendor": "Microsoft",
+      "Vendor_Code": "microsoft",
+      "Category": [ { "ValueKind": 3 } ],
+      "Arrow_Sub_Categories": [],
+      "Customer_Category": "Corporate",
+      "Service_Ref": "MICROSOFT",
+      "Service_Name": "Azure Account - (Corporate)",
+      "Keywords": [],
+      "Is_Addon": false,
+      "Has_Addons": false,
+      "Is_Trial": false,
+      "Thumbnail": "https://websource.myportal.cloud/images/MicrosoftAzure.png",
+      "Square_Logo": "https://websource.myportal.cloud/images/icon/Microsoft-Azure_New.png",
+      "Prices": [
+        {
+          "Min_Quantity": 1.0,
+          "Max_Quantity": 1.0,
+          "Recurring_Buy_Price": 0.0,
+          "Recurring_Sell_Price": 0.0,
+          "Term": "No Term",
+          "Unit_Type": "ACCOUNT",
+          "Recurring_Time_Unit": "per Month",
+          "Currency": "USD",
+          "Period_As_Hours": 720,
+          "Term_As_Hours": 0
+        }
+      ],
+      "MarketSegments": [ "Corporate" ],
+      "Weight_Top_Sales": 2.409972299168975,
+      "Weight_Forced": 100,
+      "IsEnabled": true,
+      "Program": { "IsEnabled": true },
+      "Prerequisites": [],
+      "Add_Ons": [],
+      "Orderable_Sku": "SUFBU3x8bWljcm9zb2Z0fHxNSUNST1NPRlR8fERaSDMxOFowQlBTNjowMDAx"
+    }
+  ],
+  "Filters": [
+    {
+      "Name": "vendor",
+      "Values": []
+    },
+    {
+      "Name": "isAddon",
+      "Values": [
+        {
+          "Value": "false",
+          "Count": 18378
+        },
+        {
+          "Value": "true",
+          "Count": 1840
+        }
+      ]
+    },
+    {
+      "Name": "licenseAgreementType",
+      "Values": [
+        {
+          "Value": "",
+          "Count": 15710
+        },
+        {
+          "Value": "Corporate",
+          "Count": 1658
+        },
+        {
+          "Value": "Education",
+          "Count": 1464
+        },
+        {
+          "Value": "Charity",
+          "Count": 744
+        },
+        {
+          "Value": "Government",
+          "Count": 642
+        }
+      ]
+    },
+    {
+      "Name": "arrowCategories",
+      "Values": [
+        {
+          "Value": "Business Apps",
+          "Count": 1324
+        },
+        {
+          "Value": "Productivity",
+          "Count": 1287
+        },
+        {
+          "Value": "Security",
+          "Count": 266
+        },
+        {
+          "Value": "Data and Analytics",
+          "Count": 214
+        },
+        {
+          "Value": "Infrastructure",
+          "Count": 172
+        },
+        {
+          "Value": "Networking and Connectivity",
+          "Count": 143
+        },
+        {
+          "Value": "Storage",
+          "Count": 131
+        },
+        {
+          "Value": "Automation",
+          "Count": 95
+        },
+        {
+          "Value": "IoT",
+          "Count": 17
+        },
+        {
+          "Value": "DevOps",
+          "Count": 8
+        },
+        {
+          "Value": "Monitoring and Optimisation",
+          "Count": 4
+        },
+        {
+          "Value": "monitoringAndOptimisation",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Name": "classification",
+      "Values": [
+        {
+          "Value": "SaaS",
+          "Count": 18031
+        },
+        {
+          "Value": "FTSL",
+          "Count": 1148
+        },
+        {
+          "Value": "PSW",
+          "Count": 407
+        },
+        {
+          "Value": "RI",
+          "Count": 204
+        },
+        {
+          "Value": "ProS",
+          "Count": 127
+        },
+        {
+          "Value": "IaaS",
+          "Count": 111
+        },
+        {
+          "Value": "N/A",
+          "Count": 96
+        },
+        {
+          "Value": "HW",
+          "Count": 71
+        },
+        {
+          "Value": "PaaS",
+          "Count": 20
+        },
+        {
+          "Value": "HaaS",
+          "Count": 3
+        }
+      ]
+    },
+    {
+      "Name": "isTrial",
+      "Values": [
+        {
+          "Value": "false",
+          "Count": 20045
+        },
+        {
+          "Value": "true",
+          "Count": 173
+        }
+      ]
+    }
+  ],
+  "Pagination": {
+    "Per_Page": 8,
+    "Current_Page": 0,
+    "Total_Page": 2,
+    "Total": 8,
+    "Next": "/catalog/find?search_after=1.5574784%2Caeea1b09be19e05a5fa794bcaea62ced",
+    "Previous": "/catalog/find?search_before=10.556242%2C971e949ca688ea552b453126b855f8dd"
+  }
+}

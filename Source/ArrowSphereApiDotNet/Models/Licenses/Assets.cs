@@ -11,5 +11,8 @@ namespace ArrowSphereApiDotNet.Models.Licenses
         string SquareLogoUrl,
         string FeaturePictureUrl)
     {
+        public Assets() : this(string.Empty, string.Empty, string.Empty)
+        {
+        }
     }
 }

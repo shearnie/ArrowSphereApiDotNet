@@ -11,5 +11,8 @@ namespace ArrowSphereApiDotNet.Models.Licenses
         string Name,
         string State)
     {
+        public Config() : this(string.Empty, string.Empty, string.Empty)
+        {
+        }
     }
 }

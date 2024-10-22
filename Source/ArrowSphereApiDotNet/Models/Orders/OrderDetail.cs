@@ -9,5 +9,8 @@ namespace ArrowSphereApiDotNet.Models.Orders
     public record OrderDetail(
         IEnumerable<Order> Orders)
     {
+        public OrderDetail() : this(new List<Order>())
+        {
+        }
     }
 }

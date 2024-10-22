@@ -10,5 +10,8 @@ namespace ArrowSphereApiDotNet.Models.Licenses
         string Key,
         string Message)
     {
+        public Warning() : this(string.Empty, string.Empty)
+        {
+        }
     }
 }

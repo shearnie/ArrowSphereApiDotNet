@@ -11,5 +11,8 @@ namespace ArrowSphereApiDotNet.Models.Licenses
         string Type,
         DateTime LastUpdate)
     {
+        public Rates() : this(default, string.Empty, default)
+        {
+        }
     }
 }

@@ -10,5 +10,8 @@ namespace ArrowSphereApiDotNet.Models.Licenses
         int Status,
         LicenseDetailsData Data)
     {
+        public LicenseDetails() : this(default, new LicenseDetailsData())
+        {
+        }
     }
 }

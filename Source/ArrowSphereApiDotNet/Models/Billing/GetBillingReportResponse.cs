@@ -11,5 +11,8 @@ namespace ArrowSphereApiDotNet.Models.Billing
         GetBillingReportResponseData Data,
         Pagination Pagination)
     {
+        public GetBillingReportResponse() : this(default, new GetBillingReportResponseData(), new Pagination())
+        {
+        }
     }
 }
