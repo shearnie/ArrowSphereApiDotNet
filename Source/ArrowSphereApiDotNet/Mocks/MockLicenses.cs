@@ -14,7 +14,20 @@ namespace ArrowSphereApiDotNet.Mocks
 
         public async Task<ListLicenses> ListLicenses(int? page = null, int? perPage = null, string? searchBefore = null, string? searchAfter = null)
         {
-            return await Task.FromResult(_testData.Licenses);
+            var rs = _testData.Licenses;
+            if (!string.IsNullOrEmpty(searchAfter))
+            {
+                rs = new ListLicenses(
+                    rs.Status,
+                    rs.Data,
+                    new Models.Pagination(rs.Pagination.Per_Page,
+                                          rs.Pagination.Current_Page + 1,
+                                          rs.Pagination.Total_Page + 1,
+                                          rs.Pagination.Total,
+                                          null,
+                                          rs.Pagination.Previous));
+            }
+            return await Task.FromResult(rs);
         }
 
         public async Task<LicenseDetails> LicenseDetails(string licenseReference)

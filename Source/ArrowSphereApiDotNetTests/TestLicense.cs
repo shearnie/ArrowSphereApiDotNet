@@ -27,10 +27,31 @@ namespace ArrowSphereApiDotNetTests
         {
             var client = _client.GetLicenseClient();
 
-            var rs = await client.ListLicenses();
+            var rs = await client.ListLicenses(1, 10);
 
             Assert.That(rs.Status, Is.EqualTo(200));
             Assert.That(rs.Data.Licenses.Any(), Is.True);
+
+            var searchAfter = rs.Pagination.Next ?? "";
+            if (!string.IsNullOrEmpty(searchAfter))
+            {
+                searchAfter = searchAfter.Substring(searchAfter.IndexOf("search_after="));
+                searchAfter = searchAfter.Replace("search_after=", "");
+            }
+
+            while (!string.IsNullOrEmpty(searchAfter))
+            {
+                rs = await client.ListLicenses(null, 10, null, searchAfter);
+
+                Assert.That(rs.Status, Is.EqualTo(200));
+
+                searchAfter = rs.Pagination.Next ?? "";
+                if (!string.IsNullOrEmpty(searchAfter))
+                {
+                    searchAfter = searchAfter.Substring(searchAfter.IndexOf("search_after="));
+                    searchAfter = searchAfter.Replace("search_after=", "");
+                }
+            }
         }
 
         [Test]
