@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,8 +9,13 @@ namespace ArrowSphereApiDotNet.Models.Catalog
 {
 	public class CatalogSearchRequestFilters
 	{
-		public string Vendor { get; set; } = string.Empty;
-		public bool Is_Addon { get; set; }
-		public int Weight_Forced { get; set; }
+		[JsonProperty(PropertyName = "vendor", NullValueHandling = NullValueHandling.Ignore)]
+		public string? Vendor { get; set; }
+
+		[JsonProperty(PropertyName = "is_addon", NullValueHandling = NullValueHandling.Ignore)]
+		public bool? Is_Addon { get; set; }
+
+		[JsonProperty(PropertyName = "weight_forced", NullValueHandling = NullValueHandling.Ignore)]
+		public int? Weight_Forced { get; set; }
 	}
 }
