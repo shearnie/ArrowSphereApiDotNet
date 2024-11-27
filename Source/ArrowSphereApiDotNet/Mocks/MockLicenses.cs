@@ -92,10 +92,20 @@ namespace ArrowSphereApiDotNet.Mocks
         {
             return await Task.FromResult(new UpdateLicenseResponse()
                 {
-                    Status = 200,
+                    Status = 202,
                     Error = "Accepted",
                     Messages = new List<string>() { "Warning: The desired seat count 10 exceeded the maximum seat count allowed per License 5\"" },
                 });
-        }
-    }
+		}
+
+		public async Task<UpdateLicenseSeatsResponse> UpdateLicenseSeats(string licenseReference, UpdateLicenseSeatsRequest request)
+		{
+			return await Task.FromResult(new UpdateLicenseSeatsResponse(204, string.Empty));
+		}
+
+		public async Task<CancelLicenseResponse> CancelLicense(string licenseReference, CancelLicenseRequest request)
+		{
+			return await Task.FromResult(new CancelLicenseResponse(204, string.Empty));
+		}
+	}
 }

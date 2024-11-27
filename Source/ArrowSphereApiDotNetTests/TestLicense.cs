@@ -66,6 +66,23 @@ namespace ArrowSphereApiDotNetTests
 
             Assert.That(rs.Status, Is.EqualTo(200));
             Assert.That(rs.Data.License.License_Id, Is.EqualTo(licenseId));
-        }
-    }
+		}
+
+
+		[Test]
+		public async Task LicenseUpdates()
+		{
+			var client = _client.GetLicenseClient();
+
+			var list = await client.ListLicenses();
+
+			var licenseId = list.Data.Licenses.First().License_Id;
+
+			var updateSeats = await client.UpdateLicenseSeats(licenseId, new ArrowSphereApiDotNet.Models.Licenses.UpdateLicenseSeatsRequest() { Seats = 2 });
+			Assert.That(updateSeats.Status, Is.EqualTo(204));
+
+			var cancelRs = await client.CancelLicense(licenseId, new ArrowSphereApiDotNet.Models.Licenses.CancelLicenseRequest());
+			Assert.That(cancelRs.Status, Is.EqualTo(204));
+		}
+	}
 }

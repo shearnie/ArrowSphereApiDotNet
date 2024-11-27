@@ -160,5 +160,17 @@ namespace ArrowSphereApiDotNet.Impl
 
             return await HandleResponseMessage<T>(patch);
         }
-    }
+
+        public async Task<T> PutAsync<T>(string methodPath, string? jsonRequestContent = null)
+		{
+			var put = jsonRequestContent != null
+				? await GetHttpClient().PutAsync(
+					_config.ApiBasePath + methodPath,
+					new StringContent(jsonRequestContent ?? string.Empty, Encoding.UTF8, "application/json"))
+
+				: await GetHttpClient().PutAsync(_config.ApiBasePath + methodPath, null);
+
+			return await HandleResponseMessage<T>(put);
+		}
+	}
 }

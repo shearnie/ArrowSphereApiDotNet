@@ -41,6 +41,16 @@ namespace ArrowSphereApiDotNet.Impl
         public async Task<UpdateLicenseResponse> UpdateLicense(string licenseReference, UpdateLicenseRequest request)
         {
             return await _client.PatchAsync<UpdateLicenseResponse>($"licenses/{licenseReference}", JsonConvert.SerializeObject(request));
-        }
-    }
+		}
+
+		public async Task<UpdateLicenseSeatsResponse> UpdateLicenseSeats(string licenseReference, UpdateLicenseSeatsRequest request)
+		{
+			return await _client.PutAsync<UpdateLicenseSeatsResponse>($"licenses/{licenseReference}/seats", JsonConvert.SerializeObject(request));
+		}
+
+		public async Task<CancelLicenseResponse> CancelLicense(string licenseReference, CancelLicenseRequest request)
+		{
+			return await _client.PutAsync<CancelLicenseResponse>($"licenses/{licenseReference}/cancel", JsonConvert.SerializeObject(request));
+		}
+	}
 }
